@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Daily Brief · 科技投资早报</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --primary:#1F3864;
+    --primary-light:#2E5090;
+    --text:#222222;
+    --text-light:#555555;
+    --border:#E3E7EE;
+    --stripe:#F2F2F2;
+    --bg:#FAFBFC;
+    --max-width:760px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+    font-size:15px;
+    line-height:1.7;
+    color:var(--text);
+    background:var(--bg);
+  }
+  a{color:var(--primary-light);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  .topbar{
+    background:var(--primary);
+    color:#fff;
+    font-size:12.5px;
+    padding:8px 16px;
+    text-align:center;
+  }
+  .wrap{
+    max-width:var(--max-width);
+    margin:0 auto;
+    padding:0 16px 60px;
+  }
+
+  header.hero{
+    padding:32px 0 20px;
+    border-bottom:1px solid var(--border);
+    margin-bottom:24px;
+  }
+  header.hero .kicker{
+    font-size:12.5px;
+    color:var(--text-light);
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    margin-bottom:8px;
+  }
+  header.hero h1{
+    font-size:26px;
+    font-weight:900;
+    color:var(--primary);
+    line-height:1.3;
+  }
+  header.hero p.tagline{
+    margin-top:8px;
+    font-size:14px;
+    color:var(--text-light);
+  }
+
+  .latest-card{
+    display:block;
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:20px;
+    background:#fff;
+    margin-bottom:36px;
+    transition:box-shadow .15s ease, transform .15s ease;
+  }
+  .latest-card:hover{
+    box-shadow:0 4px 16px rgba(31,56,100,.12);
+    text-decoration:none;
+    transform:translateY(-1px);
+  }
+  .latest-card .label{
+    display:inline-block;
+    font-size:11.5px;
+    font-weight:700;
+    color:#fff;
+    background:var(--primary);
+    padding:3px 8px;
+    border-radius:4px;
+    margin-bottom:10px;
+    letter-spacing:.03em;
+  }
+  .latest-card h2{
+    font-size:20px;
+    font-weight:900;
+    color:var(--primary);
+    margin-bottom:8px;
+  }
+  .latest-card .sub{
+    font-size:13.5px;
+    color:var(--text-light);
+    margin-bottom:6px;
+  }
+  .latest-card .cta{
+    margin-top:10px;
+    font-size:13.5px;
+    font-weight:700;
+    color:var(--primary-light);
+  }
+
+  section.archive h2.section-title{
+    font-size:15px;
+    font-weight:700;
+    color:var(--primary);
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    padding-bottom:10px;
+    border-bottom:2px solid var(--primary);
+    margin-bottom:14px;
+  }
+
+  details.month-group{
+    border:1px solid var(--border);
+    border-radius:8px;
+    margin-bottom:10px;
+    background:#fff;
+    overflow:hidden;
+  }
+  details.month-group[open] summary{
+    border-bottom:1px solid var(--border);
+  }
+  details.month-group summary{
+    list-style:none;
+    cursor:pointer;
+    padding:12px 16px;
+    font-size:14.5px;
+    font-weight:700;
+    color:var(--primary);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  details.month-group summary::-webkit-details-marker{display:none;}
+  details.month-group summary::after{
+    content:"+";
+    font-weight:700;
+    color:var(--text-light);
+    font-size:16px;
+  }
+  details.month-group[open] summary::after{content:"–";}
+  details.month-group summary .count{
+    font-weight:400;
+    color:var(--text-light);
+    font-size:12.5px;
+  }
+  ul.day-list{
+    list-style:none;
+    padding:6px 0;
+  }
+  ul.day-list li a{
+    display:flex;
+    justify-content:space-between;
+    padding:9px 16px;
+    font-size:13.5px;
+    color:var(--text);
+  }
+  ul.day-list li a:hover{
+    background:var(--stripe);
+    text-decoration:none;
+    color:var(--primary-light);
+  }
+  ul.day-list li a .issue-no{
+    color:var(--text-light);
+    font-size:12px;
+  }
+
+  footer.site-footer{
+    margin-top:40px;
+    padding-top:16px;
+    border-top:1px solid var(--border);
+    font-size:12px;
+    color:var(--text-light);
+    text-align:center;
+  }
+
+  @media (min-width:600px){
+    body{font-size:16px;}
+    header.hero h1{font-size:30px;}
+    .latest-card h2{font-size:22px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">Tech Daily Brief · 科技投资早报</div>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="kicker">Morning Brief in the Tech Sector</div>
+    <h1>科技投资早报</h1>
+    <p class="tagline">覆盖 AI / 半导体全产业链的机构级科技早报，每个交易日更新。</p>
+  </header>
+
+  <!-- 最新一期 -->
+  <a class="latest-card" href="archive/2026-07/2026-07-14.html">
+    <span class="label">最新一期</span>
+    <h2>科技早报 2026-07-14</h2>
+    <div class="sub">AI资本开支加速 · HBM涨价持续 · 代工产能吃紧</div>
+    <div class="sub">第 1 期</div>
+    <div class="cta">阅读全文 →</div>
+  </a>
+
+  <!-- 历史归档，按月份分组，可折叠 -->
+  <section class="archive">
+    <h2 class="section-title">历史归档</h2>
+
+    <details class="month-group" open>
+      <summary>2026年7月 <span class="count">1 期</span></summary>
+      <ul class="day-list">
+        <li><a href="archive/2026-07/2026-07-14.html"><span>2026-07-14 · 科技早报</span><span class="issue-no">第1期</span></a></li>
+      </ul>
+    </details>
+
+    <!--
+      新增一期时：
+      1. 将当天的报告页面放入 archive/YYYY-MM/YYYY-MM-DD.html（可直接复制 template.html 并替换占位符）
+      2. 在上方对应月份的 <ul class="day-list"> 中新增一个 <li><a>...</a></li>
+      3. 如果是新的月份，复制一份 <details class="month-group">...</details> 区块，修改月份标题
+      4. 更新上方“最新一期”卡片指向最新的一天
+    -->
+
+  </section>
+
+  <footer class="site-footer">
+    © Tech Daily Brief · 内容仅供学习参考，不构成投资建议
+  </footer>
+
+</div>
+</body>
+</html>
