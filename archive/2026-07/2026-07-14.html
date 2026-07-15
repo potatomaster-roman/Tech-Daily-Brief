@@ -3,124 +3,414 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>科技早报 2026-07-14 | 第1期（示例）</title>
+<title>科技早报 2026-07-14 | 第3期</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
-  :root{--primary:#1F3864;--primary-light:#2E5090;--text:#222;--text-light:#555;--border:#E3E7EE;--stripe:#F2F2F2;--bg:#FAFBFC;--max-width:760px;}
+  :root{
+    --primary:#1F3864;
+    --primary-light:#2E5090;
+    --text:#222222;
+    --text-light:#555555;
+    --border:#E3E7EE;
+    --stripe:#F2F2F2;
+    --bg:#FAFBFC;
+    --max-width:760px;
+  }
   *{box-sizing:border-box;margin:0;padding:0;}
-  body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;font-size:15px;line-height:1.7;color:var(--text);background:var(--bg);}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+    font-size:15px;
+    line-height:1.7;
+    color:var(--text);
+    background:var(--bg);
+  }
   a{color:var(--primary-light);text-decoration:none;}
   a:hover{text-decoration:underline;}
-  .topbar{background:var(--primary);color:#fff;font-size:12.5px;padding:8px 16px;text-align:center;}
-  .wrap{max-width:var(--max-width);margin:0 auto;padding:0 16px 48px;}
-  header.hero{padding:28px 0 18px;border-bottom:1px solid var(--border);margin-bottom:20px;}
-  header.hero .kicker{font-size:12.5px;color:var(--text-light);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;}
-  header.hero h1{font-size:26px;font-weight:900;color:var(--primary);line-height:1.3;}
-  header.hero .subtitle{margin-top:10px;font-size:14.5px;color:var(--text-light);}
-  .note-banner{background:#FFF6DD;border:1px solid #F0DDA0;color:#7A5B00;font-size:13px;padding:10px 14px;border-radius:6px;margin-bottom:24px;}
-  section.block{margin:28px 0;}
-  section.block h2{font-size:17px;font-weight:700;color:var(--primary);padding-top:12px;margin-bottom:12px;border-top:2px solid var(--primary);}
-  section.block h3{font-size:14.5px;font-weight:700;color:#111;margin:14px 0 8px;}
-  ul.bullets{list-style:none;padding:0;}
-  ul.bullets li{position:relative;padding-left:16px;margin-bottom:10px;font-size:14.5px;}
-  ul.bullets li::before{content:"•";position:absolute;left:0;color:var(--primary);font-weight:700;}
+
+  .topbar{
+    background:var(--primary);
+    color:#fff;
+    font-size:12.5px;
+    letter-spacing:.02em;
+    padding:8px 16px;
+    text-align:center;
+  }
+  .gentime{
+    background:#EDF1F8;
+    color:var(--text-light);
+    font-size:11.5px;
+    text-align:center;
+    padding:5px 16px;
+    border-bottom:1px solid var(--border);
+  }
+  .wrap{
+    max-width:var(--max-width);
+    margin:0 auto;
+    padding:0 16px 48px;
+  }
+  header.hero{
+    padding:28px 0 18px;
+    border-bottom:1px solid var(--border);
+    margin-bottom:20px;
+  }
+  header.hero .kicker{
+    font-size:12.5px;
+    color:var(--text-light);
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    margin-bottom:8px;
+  }
+  header.hero h1{
+    font-size:26px;
+    font-weight:900;
+    color:var(--primary);
+    line-height:1.3;
+  }
+  header.hero .subtitle{
+    margin-top:10px;
+    font-size:14.5px;
+    color:var(--text-light);
+  }
+  header.hero .subtitle span{
+    display:inline-block;
+    margin-right:6px;
+  }
+
+  section.block{
+    margin:28px 0;
+  }
+  section.block h2{
+    font-size:17px;
+    font-weight:700;
+    color:var(--primary);
+    padding-top:12px;
+    margin-bottom:12px;
+    border-top:2px solid var(--primary);
+  }
+  section.block h3{
+    font-size:14.5px;
+    font-weight:700;
+    color:#111;
+    margin:14px 0 8px;
+  }
+  section.block p{margin-bottom:10px;}
+  section.block p.empty-note{
+    color:var(--text-light);
+    font-size:14px;
+    font-style:normal;
+  }
+
+  ul.bullets{
+    list-style:none;
+    padding:0;
+  }
+  ul.bullets li{
+    position:relative;
+    padding-left:16px;
+    margin-bottom:10px;
+    font-size:14.5px;
+  }
+  ul.bullets li::before{
+    content:"•";
+    position:absolute;
+    left:0;
+    color:var(--primary);
+    font-weight:700;
+  }
   ul.bullets li b{color:#111;}
-  blockquote{margin:14px 0;padding:10px 14px;border-left:3px solid var(--primary);background:#F5F7FB;font-size:13.5px;color:var(--text-light);font-style:italic;}
-  blockquote cite{display:block;margin-top:6px;font-style:normal;font-size:12.5px;color:var(--primary);}
-  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:12px 0;border:1px solid var(--border);border-radius:6px;}
-  table{width:100%;min-width:480px;border-collapse:collapse;font-size:13px;}
-  thead th{background:var(--primary);color:#fff;text-align:left;padding:9px 10px;font-weight:700;white-space:nowrap;}
-  tbody td{padding:8px 10px;border-bottom:1px solid var(--border);}
+
+  blockquote{
+    margin:14px 0;
+    padding:10px 14px;
+    border-left:3px solid var(--primary);
+    background:#F5F7FB;
+    font-size:13.5px;
+    color:var(--text-light);
+    font-style:italic;
+  }
+  blockquote cite{
+    display:block;
+    margin-top:6px;
+    font-style:normal;
+    font-size:12.5px;
+    color:var(--primary);
+  }
+
+  .table-scroll{
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    margin:12px 0;
+    border:1px solid var(--border);
+    border-radius:6px;
+  }
+  table{
+    width:100%;
+    min-width:480px;
+    border-collapse:collapse;
+    font-size:13px;
+  }
+  thead th{
+    background:var(--primary);
+    color:#fff;
+    text-align:left;
+    padding:9px 10px;
+    font-weight:700;
+    white-space:nowrap;
+  }
+  tbody td{
+    padding:8px 10px;
+    border-bottom:1px solid var(--border);
+  }
   tbody tr:nth-child(even){background:var(--stripe);}
-  .disclaimer{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);font-size:12px;color:var(--text-light);}
-  nav.backlink{margin:20px 0 0;font-size:13.5px;}
-  @media (min-width:600px){body{font-size:16px;}header.hero h1{font-size:30px;}section.block h2{font-size:19px;}ul.bullets li{font-size:15px;}}
+
+  .disclaimer{
+    margin-top:36px;
+    padding-top:14px;
+    border-top:1px solid var(--border);
+    font-size:12px;
+    color:var(--text-light);
+  }
+
+  nav.backlink{
+    margin:20px 0 0;
+    font-size:13.5px;
+  }
+
+  @media (min-width:600px){
+    body{font-size:16px;}
+    header.hero h1{font-size:30px;}
+    section.block h2{font-size:19px;}
+    ul.bullets li{font-size:15px;}
+  }
 </style>
 </head>
 <body>
-<div class="topbar">科技投资早报 | 2026-07-14 | 第1期</div>
+
+<div class="topbar">科技投资早报 | 2026-07-14 | 第3期</div>
+<div class="gentime">生成时间：北京时间 2026-07-15 08:32</div>
+
 <div class="wrap">
+
   <header class="hero">
     <div class="kicker">Tech Daily Brief · 机构级科技早报</div>
     <h1>科技早报 2026-07-14</h1>
-    <div class="subtitle">示例内容：AI资本开支加速·HBM涨价持续·代工产能吃紧</div>
+    <div class="subtitle">
+      <span>存储链提价接力冲高</span>·<span>IBM暴跌拖累软件股</span>·<span>光模块设备链走强</span>
+    </div>
   </header>
 
-  <div class="note-banner">这是示例（demo）内容，用于展示排版效果，非真实市场数据。请以 template.html 为准生成每日正式简报。</div>
-
-  <section class="block">
+  <!-- 1. 盘后总结 -->
+  <section class="block" id="summary">
     <h2>一、盘后总结</h2>
-    <p>示例：标普500与纳指100昨日小幅上涨，资金继续向AI基础设施链集中，SMH跑赢大盘。</p>
-    <p>示例：云计算与半导体设备ETF表现分化，软件板块相对承压。</p>
-    <p>示例：半导体链跑赢M7，云厂商内部出现分化，资本开支预期是核心变量。</p>
+    <p>美东时间7月14日，6月CPI同比升3.5%，低于市场预期的3.8%，环比降0.4%，为六年多以来最大单月降幅，市场随即交易"降温+风险偏好回升"。标普500收涨0.4%至7,546.35点，纳斯达克综合指数收涨0.9%至26,111.64点（纳指100涨约1.1%），道指小幅收涨0.1%至52,548.45点，罗素2000上涨约0.4%至2,964.76点。但VIX恐慌指数逆势大涨14.2%至17.16，主要反映美伊在霍尔木兹海峡的军事对峙持续升级——美国当天开始对通过海峡的货运征收20%附加费，原油价格随之走高，WTI原油单日涨幅超3%。10年期美债收益率收报4.62%。高贝塔股(Invesco S&P 500 High Beta ETF)当日上涨1.7%，低波动股(Invesco S&P 500 Low Volatility ETF)下跌0.7%，风格上明显偏向风险资产而非防御性资产。</p>
+    <p>板块层面出现罕见分化：费城半导体类资产大幅反弹，iShares半导体ETF（SOXX）单日上涨逾3%，一举收复上一交易日（周一，因中东局势与AI资本开支担忧）近4.8%的跌幅；但代表科技权重股的XLK（Technology Select Sector SPDR）收跌约2.1%，主因是重仓股IBM当日暴跌近25%对指数的直接拖累，叠加ServiceNow、Salesforce、Accenture等软件与咨询类权重股连带下挫。也就是说，同为"科技"标签下，半导体链在补跌后强力反弹，而软件/IT服务链因IBM引发的"资本开支挤出"担忧遭遇抛售，资金呈现清晰的"结构性搬家"而非普涨普跌。</p>
+    <p>个股层面，M7内部分化明显：英伟达(NVDA)收涨3.7%至211.10美元，谷歌(GOOG)涨1.8%，Meta涨0.4%，特斯拉涨0.3%，亚马逊涨0.2%；而苹果(AAPL)跌0.5%，微软(MSFT)跌1.3%。半导体链整体跑赢M7均值，其中存储股表现最为凌厉——美光(MU)涨约5%，年内累计涨幅达229%；SK海力士美股存托凭证(SKHY)因新推出的杠杆ETF上市，单日暴涨约19%，带动闪迪(SanDisk)、西部数据(WDC)同步走强；韩国本土SK海力士盘中一度重挫超8%后收涨3.7%，三星电子收涨3.3%。云计算基础设施（Neocloud）板块内部同样分化：Nebius(NBIS)因与Reflection AI签订超10亿美元的算力供应协议维持强势，但CoreWeave(CRWV)与Nebius仍未完全消化7月1日Meta宣布自建算力出租业务当天带来的13%-15%单日市值蒸发冲击，凸显云厂商"既是供应商又是潜在竞争对手"的结构性风险仍未出清。</p>
   </section>
 
-  <section class="block">
+  <!-- 2. 个股榜单 -->
+  <section class="block" id="leaderboard">
     <h2>二、个股榜单</h2>
+    <h3>创52周新高 / 逼近新高</h3>
     <div class="table-scroll">
       <table>
         <thead><tr><th>标的</th><th>涨跌幅</th><th>成交额</th><th>事件驱动</th></tr></thead>
         <tbody>
-          <tr><td>NVDA</td><td>+2.1%</td><td>$45.2B</td><td>暂无</td></tr>
-          <tr><td>MU</td><td>+4.3%</td><td>$8.1B</td><td>HBM合约价上调消息</td></tr>
+          <tr><td>台积电(TSM)</td><td>股价约421美元，逼近52周高点421.97美元</td><td>暂无准确成交额数据</td><td>6月营收同比+67.9%创纪录，CoWoS产能"极度紧张、已全部订满"；7月16日盘前发布Q2财报</td></tr>
+          <tr><td>Monolithic Power(MPWR)</td><td>+7.97%，收报1,394.26美元</td><td>约3,139万股×股价，成交量31.4万股</td><td>暂无明确单一催化，随电源管理芯片链走强</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>成交额/成交量居前</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>标的</th><th>涨跌幅</th><th>成交量</th><th>事件驱动</th></tr></thead>
+        <tbody>
+          <tr><td>IBM</td><td>-24.95%，收报217.83美元</td><td>约5,042万股（成交额约110亿美元）</td><td>Q2初步业绩不及预期，管理层警示"资本开支挤出"（详见五、软件/SaaS）</td></tr>
+          <tr><td>戴尔科技(DELL)</td><td>+7.20%，收报457.85美元</td><td>约490万股（成交额约22亿美元）</td><td>暂无明确单一催化</td></tr>
+          <tr><td>CrowdStrike(CRWD)</td><td>+10.60%，收报207.82美元</td><td>约736万股（成交额约15亿美元）</td><td>网络安全板块当日普遍走强，无个股专属公告</td></tr>
+          <tr><td>NetApp(NTAP)</td><td>+6.56%，收报174.69美元</td><td>约145万股</td><td>暂无明确单一催化</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>涨幅榜</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>标的</th><th>涨跌幅</th><th>事件驱动</th></tr></thead>
+        <tbody>
+          <tr><td>CleanSpark(CLSK)</td><td>+15%</td><td>获得66亿美元基础设施租赁协议，若行使两项5年期选择权规模可扩大至116亿美元</td></tr>
+          <tr><td>Tower Semiconductor(TSEM)</td><td>+10.97%</td><td>宣布在日本投资30亿美元扩产先进制程封测产能，获日本政府10亿美元补贴支持</td></tr>
+          <tr><td>SK海力士ADR(SKHY)</td><td>约+19%</td><td>首只跟踪该股的杠杆ETF上市，带动存储链情绪修复，属资金结构性驱动</td></tr>
+          <tr><td>CrowdStrike(CRWD)</td><td>+10.60%</td><td>暂无</td></tr>
+          <tr><td>应用光电(AAOI)</td><td>日内约+6%</td><td>得州Pearland新建约40万平方英尺800G/1.6T光模块产能，带动Lumentum、Coherent同步走强</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>跌幅榜</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>标的</th><th>涨跌幅</th><th>事件驱动</th></tr></thead>
+        <tbody>
+          <tr><td>IBM</td><td>-24.95%</td><td>Q2初步营收/EPS不及预期，管理层称客户资本开支转向服务器、存储、内存采购</td></tr>
+          <tr><td>Workday(WDAY)</td><td>-9.7%</td><td>IBM引发的软件板块连带抛售</td></tr>
+          <tr><td>ServiceNow(NOW)</td><td>-8%</td><td>同上</td></tr>
+          <tr><td>埃森哲(ACN)</td><td>-7%</td><td>同上</td></tr>
+          <tr><td>Cognizant(CTSH)</td><td>-7%</td><td>同上</td></tr>
+          <tr><td>Salesforce(CRM)</td><td>-6%</td><td>同上</td></tr>
+          <tr><td>AppLovin(APP)</td><td>-12.65%，收报442.85美元</td><td>高贝塔（2.48）个股放大市场波动，叠加AXON广告引擎转为自助式开放模式的担忧、CEO 6月减持约5,100万美元股票</td></tr>
         </tbody>
       </table>
     </div>
   </section>
 
-  <section class="block">
+  <!-- 3. AI/半导体全产业链 -->
+  <section class="block" id="chain">
     <h2>三、AI/半导体全产业链</h2>
+
+    <h3>AI模型/应用与资本开支</h3>
+    <ul class="bullets">
+      <li><b>Anthropic</b>：据报道，Anthropic与xAI签订协议，将以每月1.25亿美元、全年约15亿美元的价格租用xAI位于孟菲斯的Colossus 1数据中心算力，协议期至2029年5月 → 验证点是双方是否披露正式合同细节及后续容量扩展条款。<a href="https://enterprisedna.co/resources/news/anthropic-xai-colossus-1-25-billion-compute-economics-2026/" target="_blank" rel="noopener">Enterprise DNA</a></li>
+      <li><b>OpenAI vs Anthropic</b>：据报道，因Anthropic凭借Claude Code在企业市场份额持续攀升，OpenAI正考虑大幅下调API定价以应对竞争 → 验证点是OpenAI是否在近期正式官宣新定价方案。<a href="https://opentools.ai/news/openai-price-cuts-anthropic-token-pricing-2026" target="_blank" rel="noopener">OpenTools</a></li>
+      <li><b>中国大模型</b>：CNBC报道，随着OpenAI、Anthropic使用成本上升，越来越多美国企业客户开始转向中国大模型厂商的API服务 → 验证点是后续季度头部云厂商模型调用量份额数据是否印证这一迁移趋势。</li>
+    </ul>
+
+    <h3>CSP/云资本开支</h3>
+    <ul class="bullets">
+      <li><b>四大CSP+甲骨文(Meta/Microsoft/Google/Amazon/Oracle)</b>：多方测算显示，五家公司2026年资本开支合计约6,600亿至6,900亿美元（另一口径为7,250亿美元，统计范围略有差异，两个口径并列）；其中亚马逊约2,000亿美元居首，谷歌约1,750亿至1,850亿美元，Meta约1,150亿至1,450亿美元（两个口径），微软约1,100亿至1,200亿美元，甲骨文约500亿美元 → 验证点是三季度财报电话会指引是否进一步上修，以及自由现金流是否因资本开支加速而承压。</li>
+      <li><b>Stargate项目</b>：OpenAI、SoftBank与Oracle推进的5,000亿美元数据中心项目持续加码算力建设 → 验证点是项目分阶段的实际动工与并网进度披露。</li>
+    </ul>
+    <blockquote>“roughly 75% of hyperscaler spending, about $450 billion, goes directly to AI infrastructure — GPUs, servers, networking equipment, and data centers.”<cite>—— 综合行业测算口径</cite></blockquote>
+
+    <h3>AI云/数据中心运营商</h3>
+    <ul class="bullets">
+      <li><b>Nebius(NBIS)</b>：据Bloomberg报道，Nebius与Reflection AI签订协议，将向其出售超过10亿美元的GPU算力，履约期至2029年 → 验证点是该合同是否在后续季度财报中被列为已确认收入而非意向协议。</li>
+      <li><b>CoreWeave(CRWV) / Nebius(NBIS)</b>：两家公司仍未完全消化7月1日Meta宣布进军neocloud（自建GPU出租业务）当天带来的13%-15%单日市值损失；CoreWeave与Meta的算力协议规模达210亿美元（至2032年），Nebius与Meta的协议规模达270亿美元（为期5年），两家公司对Meta而言"既是供应商也是潜在竞争对手"的关系尚未消除市场担忧。CoreWeave于7月9日获Gartner评为云AI基础设施魔力象限"远见者"(Visionary) → 验证点是CoreWeave、Nebius下一份季度财报中的算力利用率与新签约规模是否被Meta自建产能实质性挤出。</li>
+    </ul>
+
+    <h3>GPU/CPU/ASIC</h3>
+    <ul class="bullets">
+      <li><b>英伟达(NVDA)</b>：收涨3.7%至211.10美元；KeyBanc在亚洲供应链检查后将其目标价由310美元上调至330美元，维持"Overweight"评级 → 验证点是三季度亚太代工与存储厂商实际出货数据是否验证此次检查结论。<a href="https://www.tipranks.com/news/this-five-star-keybanc-analyst-turns-more-bullish-on-chip-stocks-lifts-targets-for-amd-nvda-mrvl-mu-and-arm" target="_blank" rel="noopener">TipRanks</a></li>
+      <li><b>AMD</b>：KeyBanc将目标价由530美元大幅上调至725美元，维持"Overweight"评级，理由为AI数据中心需求持续、存储供应紧张 → 验证点是MI系列产品下一季度出货量与超大规模客户合同披露。</li>
+      <li><b>Arm(ARM)、Marvell(MRVL)</b>：KeyBanc同步将Arm目标价由300美元上调至430美元，Marvell目标价由385美元上调至400美元 → 验证点是AI网络芯片订单在下季度财报中的具体确认收入规模。</li>
+    </ul>
+
     <h3>HBM/DRAM/NAND/SSD/HDD</h3>
     <ul class="bullets">
-      <li><b>Micron (MU)</b>：据报道下季度HBM合约价环比上调约10-15% → 验证点是下季度财报电话会中管理层对合约价的确认表述</li>
+      <li><b>DRAM/NAND合约价</b>：据TrendForce报道，三星据称正寻求第三季度DRAM合约价最高上调20%，LPDDR系列涨幅或超20%；另据行业测算，一季度传统DRAM合约价环比上涨93%-98%，二季度再涨58%-63%，NAND闪存一季度环比涨85%-90%，二季度涨55%-60%（不同机构口径存在差异，此处并列呈现）→ 验证点是三季度末实际成交价格是否兑现当前涨价预期。需澄清：合约价涨幅反映的是供应商定价能力而非终端出货量，不能直接等同于收入增速。<a href="https://www.trendforce.com/news/2026/07/03/news-samsung-reportedly-seeks-up-to-20-3q26-dram-price-increase-lpddr-hikes-may-exceed-20/" target="_blank" rel="noopener">TrendForce</a></li>
+      <li><b>HBM</b>：三星与SK海力士已将HBM3E面向2026年交付的价格上调20%；三星新一代HBM4定价谈判中，据报道涨幅可能达上一代的30% → 验证点是HBM4量产良率与英伟达/AMD下一代GPU平台的实际验证结果。<a href="https://seekingalpha.com/news/4535511-samsung-sk-hynix-increase-hbm3e-prices-by-20-percent-for-2026-orders-report" target="_blank" rel="noopener">Seeking Alpha</a></li>
+      <li><b>美光(MU)/SK海力士(SKHY)/西部数据(WDC)/闪迪</b>：美光收涨约5%，年内累计涨229%；SK海力士ADR因新推杠杆ETF上市单日暴涨约19%，带动闪迪、西部数据同步走强，韩国本土SK海力士盘中一度重挫超8%后收涨3.7%，三星电子收涨3.3% → 验证点是杠杆ETF带来的交易性资金是否会在存储基本面数据（如三星、SK海力士下季度财报）公布前后加剧股价波动。</li>
     </ul>
-    <blockquote>“HBM需求持续超出我们年初预期。”<cite>—— 示例引语，来源：管理层财报电话会</cite></blockquote>
+
+    <h3>晶圆代工与先进封装</h3>
+    <ul class="bullets">
+      <li><b>台积电(TSM)</b>：6月营收达新台币442.68亿元，同比增长67.9%创单月纪录，打破过去四年"上半年淡季"的季节性规律；CEO魏哲家表示CoWoS先进封装产能"极度紧张，2026年已全部订满" → 验证点是7月16日盘前Q2财报电话会对CoWoS 2027年扩产节奏与先进制程涨价幅度的最新表述。</li>
+      <li><b>CoWoS产能</b>：2026年CoWoS总需求预计达约100万片，约为2024年全年约37万片需求的近三倍；英伟达占据台积电2026年先进封装产能约60%，英伟达、博通、AMD三家合计占比85%以上；产能已从2024年末约3.5万片/月扩张至2025年末约7.5万片/月，目标2026年末达12.5万至13万片/月，供需缺口预计从年初约20%收窄至年末约10% → 验证点是月度产能爬坡数据能否按计划兑现，需澄清：产能扩张速度不等于实际出货与终端GPU交付量。<a href="https://www.trendforce.com/news/2026/06/15/news-tsmc-cowos-supply-demand-gap-reportedly-seen-narrowing-from-20-to-10-by-end-2026-as-capacity-expands/" target="_blank" rel="noopener">TrendForce</a></li>
+    </ul>
+
+    <h3>半导体设备/测试</h3>
+    <ul class="bullets">
+      <li><b>科磊(KLA)</b>：Susquehanna维持"中性"评级，目标价275美元；Cantor Fitzgerald上调目标价至325美元；美银上调目标价至317美元，隐含17%-25%不等的上涨空间（不同机构起始基准不同，两个口径并列）→ 验证点是KLA下一季度WFE（晶圆厂设备）订单指引。<a href="https://finance.yahoo.com/markets/stocks/articles/analysts-just-raised-price-targets-120500108.html" target="_blank" rel="noopener">Yahoo Finance</a></li>
+      <li><b>应用材料(AMAT)</b>：高盛分析师James Schneider上调其目标价（具体数值未披露）；亚洲供应链检查结果公布后，AMAT盘前一度涨超4% → 验证点是下季度WFE资本开支预测是否同步上修。</li>
+      <li><b>ASML</b>：Bernstein上调其目标价（具体数值未披露）→ 验证点是极紫外光刻机(EUV)在手订单与交付节奏的最新披露。</li>
+    </ul>
+
+    <h3>PCB/载板/光通信/电源</h3>
+    <ul class="bullets">
+      <li><b>应用光电(AAOI)</b>：日内上涨约6%至119.10美元，因在得州Pearland破土动工新建约40万平方英尺的800G/1.6T光模块制造基地；公司一季度数据中心业务收入8,140万美元，同比增长超一倍；年内累计涨幅达221%，前瞻市盈率约84倍，beta高达3.69，波动性极大 → 验证点是新增产能能否按计划在三季度开始贡献产量，以及客户集中度风险是否缓解。</li>
+      <li><b>Lumentum(LITE)</b>：受AAOI消息带动，日内上涨约5%至806.81美元，本身无独立催化；公司三财季营收创纪录8.084亿美元，同比增长90%，非GAAP营业利润率环比提升700个基点至32%；光学电路交换机(OCS)订单储备超4亿美元，共封装光学(CPO)已获得数亿美元级订单，交付期在2027年上半年 → 验证点是CPO订单能否如期转化为2027年上半年的确认收入。</li>
+      <li><b>Coherent(COHR)</b>：日内上涨约1%至310.11美元；三财季营收18.1亿美元，同比增长20.5%，正在得州扩产磷化铟(InP)晶圆产能；英伟达已对其投资20亿美元并推动其纳入标普500指数 → 验证点是InP产能爬坡节奏与英伟达合作的具体产品验证进展。</li>
+    </ul>
+    <blockquote>“NVIDIA's $2 billion investment in Coherent and its Texas indium phosphide ramp give the AI-optics trade a second anchor beyond AAOI.”<cite>—— 24/7 Wall St，2026年7月14日</cite></blockquote>
   </section>
 
-  <section class="block">
+  <!-- 4. 互联网/平台 -->
+  <section class="block" id="internet">
     <h2>四、互联网/平台</h2>
-    <p class="empty-note">今日该板块无重要增量信息</p>
+    <ul class="bullets">
+      <li><b>Meta / 谷歌</b>：当日分别收涨0.4%、1.8%，主要跟随大盘风险偏好回升及CSP资本开支叙事（详见三、CSP/云资本开支），无独立于板块的重大个股公告 → 验证点是两家公司三季度财报电话会对AI产品变现与资本开支节奏的最新指引。</li>
+      <li><b>派拉蒙Skydance(PSKY) / 华纳兄弟探索(WBD)</b>：据Motley Fool报道，已有12个州对两家公司的合并交易提起诉讼，试图阻止该并购案，进一步拖长这笔已耗时较久的交易进程 → 验证点是相关诉讼的下一次庭审安排及FTC/司法部的正式表态。</li>
+    </ul>
   </section>
 
-  <section class="block">
+  <!-- 5. 软件/SaaS -->
+  <section class="block" id="software">
     <h2>五、软件/SaaS</h2>
-    <p class="empty-note">今日该板块无重要增量信息</p>
+    <ul class="bullets">
+      <li><b>IBM</b>：股价收跌24.95%至217.83美元，为该股历史上最差单日表现之一。公司公布Q2初步业绩：营收172亿美元，低于市场一致预期的178.5亿-178.6亿美元；non-GAAP每股收益2.93美元，低于预期的3.01-3.02美元；其中基础设施业务收入同比下滑7%，咨询业务持平。CEO Arvind Krishna在声明中坦言"This quarter we faltered"，并解释称"In the last few weeks of June, we saw clients shift their quarterly capex spend toward servers, storage, and memory purchases to secure supply-constrained infrastructure ahead of expected price increases"，"we did not anticipate the magnitude of the capex reprioritization" → 验证点是IBM下季度财报能否证实这一"资本开支挤出"现象是行业性趋势还是IBM自身业务结构（主机/基础设施占比较高）导致的个例。</li>
+      <li><b>软件/咨询板块连带反应</b>：Workday(WDAY)跌9.7%，ServiceNow(NOW)跌8%，埃森哲(ACN)跌7%，Cognizant(CTSH)跌7%，Salesforce(CRM)跌6%，均受IBM警示拖累 → 验证点是这些公司自身即将公布的季度业绩中，企业客户IT预算分配是否确实出现从软件转向硬件的迹象。需澄清：单日股价联动反映的是市场情绪与预期修正，尚不构成这些公司自身基本面恶化的直接证据。</li>
+    </ul>
+    <blockquote>“The IBM update will deliver a devastating blow to software/services stocks as investors will worry about the capex pivot negatively impacting the whole industry.”<cite>—— Adam Crisafulli，Vital Knowledge，2026年7月14日</cite></blockquote>
   </section>
 
-  <section class="block">
+  <!-- 6. 消费电子/智能车 -->
+  <section class="block" id="consumer">
     <h2>六、消费电子/智能车</h2>
-    <p class="empty-note">今日该板块无重要增量信息</p>
+    <ul class="bullets">
+      <li><b>特斯拉(TSLA)</b>：收涨0.3%。公司7月正式跨过Robotaxi"无安全员"运营的里程碑；人形机器人Optimus Gen3在Fremont工厂的年化产能目标上调至约7万台，该产线由原Model S/X产线改造而来，设计年产能达100万台，但由于约1万个全新零部件供应链尚不成熟，初期产量将"极为缓慢"，真正规模化量产需等待2027年得州专属工厂投产 → 验证点是Optimus Gen3三季度末实际下线台数与零部件国产化/供应链成熟度进展。</li>
+      <li><b>中国消费电子供应链转型</b>：据报道，立讯精密、蓝思科技、瑞声科技等原苹果产业链精密零部件厂商正将产能改造用于人形机器人生产；富士康计划在越南建设人形机器人产线，9月启动试产，11月转入量产（该计划尚未经充分证实，标注为"据报道"）→ 验证点是相关公司三季度资本开支公告与首批机器人量产订单披露。</li>
+      <li><b>苹果(AAPL)</b>：收跌0.5%至315.62美元，当日无重大独立事件驱动，跟随大盘M7内部分化 → 今日该子板块无进一步重要增量信息。</li>
+    </ul>
   </section>
 
-  <section class="block">
+  <!-- 7. 投行目标价变动 -->
+  <section class="block" id="ratings">
     <h2>七、过去24小时投行目标价变动</h2>
     <div class="table-scroll">
       <table>
-        <thead><tr><th>标的</th><th>投行</th><th>目标价变化</th><th>评级动作</th></tr></thead>
-        <tbody><tr><td>AVGO</td><td>Morgan Stanley</td><td>$220 → $250</td><td>维持增持</td></tr></tbody>
+        <thead><tr><th>标的</th><th>投行</th><th>目标价变化（前值→新值）</th><th>评级动作</th></tr></thead>
+        <tbody>
+          <tr><td>NVDA</td><td>KeyBanc</td><td>310美元 → 330美元</td><td>维持Overweight</td></tr>
+          <tr><td>AMD</td><td>KeyBanc</td><td>530美元 → 725美元</td><td>维持Overweight</td></tr>
+          <tr><td>ARM</td><td>KeyBanc</td><td>300美元 → 430美元</td><td>维持Overweight</td></tr>
+          <tr><td>MRVL</td><td>KeyBanc</td><td>385美元 → 400美元</td><td>维持Overweight</td></tr>
+          <tr><td>MU</td><td>KeyBanc</td><td>1,600美元 → 1,750美元</td><td>维持Overweight</td></tr>
+          <tr><td>KLA</td><td>Cantor Fitzgerald</td><td>→ 325美元</td><td>上调目标价</td></tr>
+          <tr><td>KLA</td><td>Bank of America</td><td>→ 317美元</td><td>上调目标价</td></tr>
+          <tr><td>KLA</td><td>Susquehanna</td><td>维持275美元</td><td>维持中性(Neutral)</td></tr>
+        </tbody>
       </table>
     </div>
   </section>
 
-  <section class="block">
+  <!-- 8. 卖方研报速览 -->
+  <section class="block" id="research-notes">
     <h2>八、卖方研报速览</h2>
     <div class="table-scroll">
       <table>
-        <thead><tr><th>机构</th><th>报告标题</th><th>分析师</th><th>发布日期</th><th>核心观点</th></tr></thead>
-        <tbody><tr><td>Goldman Sachs</td><td>示例报告标题</td><td>示例分析师</td><td>2026-07-13</td><td>示例：维持对AI资本开支链的正面看法</td></tr></tbody>
+        <thead><tr><th>机构</th><th>报告标题</th><th>分析师</th><th>发布日期</th><th>核心观点/目标价</th></tr></thead>
+        <tbody>
+          <tr><td>KeyBanc</td><td>亚太半导体供应链检查报告（标题未公开）</td><td>未披露具体姓名（五星分析师）</td><td>2026-07-14</td><td>存储紧缺、AI数据中心需求持续，上调AMD/ARM/MRVL/MU/NVDA目标价（详见上表）</td></tr>
+          <tr><td>Goldman Sachs</td><td>Tracking Trillions: The Assumptions Shaping the Scale of the AI Build-Out</td><td>未披露</td><td>2026年（具体日期未披露）</td><td>基线模型显示2026年AI资本开支约7,650亿美元，2031年增至1.6万亿美元，2026-2031年累计约7.6万亿美元</td></tr>
+          <tr><td>Morgan Stanley</td><td>报告标题未公开</td><td>未披露</td><td>2026年7月（具体日期未披露）</td><td>预计全球AI投资预算2026年达8,050亿美元、2027年达1.116万亿美元，同时建议降低半导体股票仓位，认为其领涨动能已现疲态</td></tr>
+          <tr><td>JPMorgan</td><td>报告标题未公开</td><td>未披露</td><td>2026年7月上旬（具体日期未披露）</td><td>近期芯片股回调反映拥挤仓位而非需求走弱，预计2026下半年全球半导体股将创历史新高，2028年前无重大新增产能</td></tr>
+          <tr><td>中金公司</td><td>7月行业配置：中报业绩将为当下市场主线</td><td>未披露</td><td>2026-07-02</td><td>7月建议超配电子硬件、通信设备、基础化工、电力电气设备、机械；提示半导体、光模块、PCB等前期领涨方向交易拥挤度已处历史高位</td></tr>
+        </tbody>
       </table>
     </div>
+    <p style="font-size:12.5px;color:var(--text-light);">中金研报内容转引自 <a href="https://finance.sina.com.cn/stock/marketresearch/2026-07-02/doc-inifkixw3620890.shtml" target="_blank" rel="noopener">新浪财经</a>，未能获取研报原文全文，采信其中公开摘要部分。</p>
   </section>
 
-  <section class="block">
+  <!-- 9. 跨市场提示 -->
+  <section class="block" id="cross-market">
     <h2>九、跨市场提示</h2>
-    <p>示例：台湾半导体股同步走强，A股存储链早盘跟随上涨。</p>
+    <p>亚太市场与美股AI硬件链联动依然紧密：日经225当日反弹收涨（不同口径涨幅0.7%-2.2%不等），能源股领涨；韩国Kospi指数在SK海力士带动下逆转早盘跌势，收涨0.7%至6,856.83点，SK海力士盘中一度重挫超8%后收涨3.7%；台积电股价逼近52周高点，7月16日盘前发布的Q2财报及CoWoS产能表态将成为亚太半导体链下一个关键催化。整体看，存储合约价与先进封装产能等供给端指标，仍是驱动亚太与美股AI硬件股同步交易的核心逻辑。</p>
+  </section>
+
+  <!-- 10. 异动/新兴关注 -->
+  <section class="block" id="emerging">
+    <h2>十、异动/新兴关注</h2>
+    <ul class="bullets">
+      <li><b>量子计算板块</b>：受6月特朗普政府签署的两项支持量子计算产业行政令持续发酵，叠加Rigetti Computing(RGTI)获得三年期1亿美元投资的消息带动，板块内Quantinuum此前收涨超13%，Infleqtion涨12%，IBM量子业务相关表述带动其涨5%，D-Wave涨2%；标普Kensho全球量子计算技术指数年内涨幅达69.3%，远超标普500同期10.7%的涨幅（截至5月末数据）→ 机制层：此轮上涨更多反映政策与专项融资驱动的主题性资金流入，而非收入端已获验证；量子计算行业整体仍处于商业化早期。验证点是三季度是否出现来自政府机构或大型企业的规模化算力采购合同，以及相关行政令的配套预算能否实质落地。</li>
+      <li><b>SK海力士杠杆ETF</b>：首只跟踪SK海力士美股存托凭证的杠杆ETF当日上市，直接推动SKHY单日暴涨约19%，带动整个存储链情绪修复 → 机制层：这是金融产品结构性资金驱动，而非公司基本面单一事件，需注意杠杆资金对个股短期波动的放大效应，不宜将其视为存储行业基本面的新增确认信号。</li>
+    </ul>
   </section>
 
   <p class="disclaimer">本内容基于公开资料整理，不构成任何投资建议，仅供学习参考。</p>
+
   <nav class="backlink"><a href="../../index.html">← 返回首页</a></nav>
+
 </div>
 </body>
 </html>
