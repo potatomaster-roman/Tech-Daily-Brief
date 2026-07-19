@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>科技早报 2026-07-17 | 第7期</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --primary:#1F3864;
+    --primary-light:#2E5090;
+    --text:#222222;
+    --text-light:#555555;
+    --border:#E3E7EE;
+    --stripe:#F2F2F2;
+    --bg:#FAFBFC;
+    --max-width:760px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+    font-size:15px;
+    line-height:1.7;
+    color:var(--text);
+    background:var(--bg);
+  }
+  a{color:var(--primary-light);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  .topbar{
+    background:var(--primary);
+    color:#fff;
+    font-size:12.5px;
+    letter-spacing:.02em;
+    padding:8px 16px;
+    text-align:center;
+  }
+  .wrap{
+    max-width:var(--max-width);
+    margin:0 auto;
+    padding:0 16px 48px;
+  }
+  header.hero{
+    padding:28px 0 18px;
+    border-bottom:1px solid var(--border);
+    margin-bottom:20px;
+  }
+  header.hero .kicker{
+    font-size:12.5px;
+    color:var(--text-light);
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    margin-bottom:8px;
+  }
+  header.hero h1{
+    font-size:26px;
+    font-weight:900;
+    color:var(--primary);
+    line-height:1.3;
+  }
+  header.hero .subtitle{
+    margin-top:10px;
+    font-size:14.5px;
+    color:var(--text-light);
+  }
+  header.hero .subtitle span{
+    display:inline-block;
+    margin-right:6px;
+  }
+  header.hero .gen-time{
+    margin-top:8px;
+    font-size:12px;
+    color:var(--text-light);
+  }
+
+  section.block{
+    margin:28px 0;
+  }
+  section.block h2{
+    font-size:17px;
+    font-weight:700;
+    color:var(--primary);
+    padding-top:12px;
+    margin-bottom:12px;
+    border-top:2px solid var(--primary);
+  }
+  section.block h3{
+    font-size:14.5px;
+    font-weight:700;
+    color:#111;
+    margin:14px 0 8px;
+  }
+  section.block p.empty-note{
+    color:var(--text-light);
+    font-size:14px;
+    font-style:normal;
+  }
+  section.block p{
+    margin-bottom:10px;
+    font-size:14.5px;
+  }
+
+  ul.bullets{
+    list-style:none;
+    padding:0;
+  }
+  ul.bullets li{
+    position:relative;
+    padding-left:16px;
+    margin-bottom:10px;
+    font-size:14.5px;
+  }
+  ul.bullets li::before{
+    content:"•";
+    position:absolute;
+    left:0;
+    color:var(--primary);
+    font-weight:700;
+  }
+  ul.bullets li b{color:#111;}
+
+  blockquote{
+    margin:14px 0;
+    padding:10px 14px;
+    border-left:3px solid var(--primary);
+    background:#F5F7FB;
+    font-size:13.5px;
+    color:var(--text-light);
+    font-style:italic;
+  }
+  blockquote cite{
+    display:block;
+    margin-top:6px;
+    font-style:normal;
+    font-size:12.5px;
+    color:var(--primary);
+  }
+
+  .table-scroll{
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    margin:12px 0;
+    border:1px solid var(--border);
+    border-radius:6px;
+  }
+  table{
+    width:100%;
+    min-width:480px;
+    border-collapse:collapse;
+    font-size:13px;
+  }
+  thead th{
+    background:var(--primary);
+    color:#fff;
+    text-align:left;
+    padding:9px 10px;
+    font-weight:700;
+    white-space:nowrap;
+  }
+  tbody td{
+    padding:8px 10px;
+    border-bottom:1px solid var(--border);
+  }
+  tbody tr:nth-child(even){background:var(--stripe);}
+
+  .disclaimer{
+    margin-top:36px;
+    padding-top:14px;
+    border-top:1px solid var(--border);
+    font-size:12px;
+    color:var(--text-light);
+  }
+
+  nav.backlink{
+    margin:20px 0 0;
+    font-size:13.5px;
+  }
+
+  @media (min-width:600px){
+    body{font-size:16px;}
+    header.hero h1{font-size:30px;}
+    section.block h2{font-size:19px;}
+    ul.bullets li{font-size:15px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">科技投资早报 | 2026-07-17 | 第7期</div>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="kicker">Tech Daily Brief · 机构级科技早报</div>
+    <h1>科技早报 2026-07-17</h1>
+    <div class="subtitle">
+      <span>AI算力信仰承压、半导体全线暴挫</span>·<span>美伊战事急速升级、油价飙升超4%</span>·<span>Meta拟出租算力、存储内部分化加剧</span>
+    </div>
+    <div class="gen-time">生成时间：北京时间 2026-07-20 07:09</div>
+  </header>
+
+  <!-- 1. 盘后总结 -->
+  <section class="block" id="summary">
+    <h2>一、盘后总结</h2>
+    <p>7月17日（周五）美股三大指数全线收跌，科技与半导体板块领跌，仅能源板块逆势走强。标普500跌1.01%至7,457.69点，纳指跌1.40%至25,520.24点，道指跌0.77%至52,146.42点，罗素2000跌0.51%至2,959.29点。VIX跳升1.87点（+11.18%）至18.60，为近三周最高水平。本周标普500累跌约1.55%，纳指累跌约1.5%，均为连续第二周收阴。板块层面分化极端：能源ETF（XLE）涨1.16%，为当日唯二正收益板块之一；半导体ETF SMH暴跌2.18%至556.53，SOXX跌1.64%至521.81，科技ETF XLK跌1.09%至175.59。资金从AI算力链条全面流出，涌入能源及防御板块——这是当日最清晰的风格信号。</p>
+    <p>本轮抛售的核心驱动力不在基本面恶化，而在"AI资本开支回报率"叙事的集体重估。BBH策略师在周五早间报告中直言，投资者正"越来越质疑当前AI资本支出热潮的可持续性"，并援引国际清算银行（BIS）年度经济报告关于"由变革性技术驱动的投资热潮历来伴随繁荣-萧条周期"的警告。市场同时面临三重压力：AI支出信仰松动→半导体估值下修；美伊冲突升级→地缘风险溢价急剧抬升、油价飙升推动通胀预期回升；美联储官员（洛根、施密德）释放鹰派信号→加息预期强化。三道压力叠加，导致科技板块出现本周第二次集中抛售。不过巴克莱策略师认为，此次仓位调整"最终将被证明是健康的，为瞄准结构性AI主题的长期投资者创造更具吸引力的入场点"。</p>
+    <p>个股层面，半导体链显著弱于M7，M7内部亦出现严重分化。苹果逆市微涨0.14%，盘中市值一度超越英伟达重回全球第一；谷歌暴跌超4%（Gemini旗舰模型延期）、Meta跌2.79%、特斯拉跌2.61%、英伟达跌2.21%、微软跌1.82%。半导体设备端AMAT跌超5%领跌，ASML跌2.09%，LRCX跌约3%。存储板块出现极端分化：希捷逆市涨5.66%、西部数据涨2.23%（HDD强劲），而闪迪跌3.99%（NAND承压），美光仅微跌0.50%相对抗跌。云厂商内部同样分化：谷歌因模型延期惨跌，而Meta尽管也下跌，但其与Anthropic的100亿美元算力出租谈判正在为其巨额AI资本开支寻找变现路径。奈飞因Q2指引miss暴跌超11%，AST SpaceMobile因10亿美元可转债发行暴跌逾17%。</p>
+  </section>
+
+  <!-- 2. 个股榜单 -->
+  <section class="block" id="leaderboard">
+    <h2>二、个股榜单</h2>
+    <h3>创52周新高</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>标的</th><th>涨跌幅</th><th>成交额</th><th>事件驱动</th></tr></thead>
+        <tbody>
+          <tr><td>AAPL</td><td>+0.14%</td><td>—</td><td>盘中市值一度超越英伟达，重回全球第一；汇丰上调评级至买入</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>成交额前十（科技/半导体）</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>标的</th><th>涨跌幅</th><th>成交额（美元）</th><th>事件驱动</th></tr></thead>
+        <tbody>
+          <tr><td>NVDA</td><td>-2.21%</td><td>~293亿</td><td>AI资本开支回报质疑持续发酵，SMH周跌6.9%</td></tr>
+          <tr><td>TSLA</td><td>-2.61%</td><td>—</td><td>市场整体风险偏好回落，美伊局势压制成长股</td></tr>
+          <tr><td>AAPL</td><td>+0.14%</td><td>—</td><td>汇丰上调至买入，目标价366美元；国行Apple智能通过备案</td></tr>
+          <tr><td>AVGO</td><td>-0.97%</td><td>~86亿</td><td>半导体板块系统性抛售，相对抗跌</td></tr>
+          <tr><td>GOOGL</td><td>-4%+</td><td>—</td><td>Gemini 3.5 Pro模型交付延期数月（彭博独家报道）</td></tr>
+          <tr><td>MSFT</td><td>-1.82%</td><td>—</td><td>暂无明确个股催化，随科技板块走弱</td></tr>
+          <tr><td>AMZN</td><td>—</td><td>—</td><td>暂无明确个股催化</td></tr>
+          <tr><td>META</td><td>-2.79%</td><td>—</td><td>传与Anthropic谈判100亿美元算力出租协议（NYT）</td></tr>
+          <tr><td>AMD</td><td>-1.03%</td><td>—</td><td>半导体板块系统性回调；7/22-23 Advancing AI大会</td></tr>
+          <tr><td>AMAT</td><td>-5%+</td><td>—</td><td>芯片设备股集体暴跌，尽管德银刚上调目标价至680美元</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>涨幅榜</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>标的</th><th>涨跌幅</th><th>成交额</th><th>事件驱动</th></tr></thead>
+        <tbody>
+          <tr><td>STX</td><td>+5.66%</td><td>—</td><td>HDD需求强劲，AI数据中心存储分层利好机械硬盘</td></tr>
+          <tr><td>WDC</td><td>+2.23%</td><td>—</td><td>与希捷逻辑一致，HDD厂商受益于AI数据存储需求</td></tr>
+          <tr><td>ARM</td><td>+1.98%</td><td>~21.6亿</td><td>暂无明确催化，或反映ARM架构在AI边缘计算渗透预期</td></tr>
+          <tr><td>AAPL</td><td>+0.14%</td><td>—</td><td>汇丰上调评级至买入、目标价366美元；盘中市值一度超越英伟达</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>跌幅榜</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>标的</th><th>涨跌幅</th><th>成交额</th><th>事件驱动</th></tr></thead>
+        <tbody>
+          <tr><td>ASTS</td><td>-17.04%</td><td>—</td><td>宣布发行10亿美元可转债（2034年到期），稀释担忧+BlueBird卫星延至2027年初</td></tr>
+          <tr><td>NFLX</td><td>-11%+</td><td>—</td><td>Q2业绩基本符合预期，但Q3盈利指引不及市场预期</td></tr>
+          <tr><td>AMAT</td><td>-5%+</td><td>—</td><td>半导体设备板块系统性杀估值，尽管基本面强劲</td></tr>
+          <tr><td>GOOGL</td><td>-4%+</td><td>—</td><td>旗舰AI模型Gemini 3.5 Pro因编程能力未达标延期数月（彭博）</td></tr>
+          <tr><td>SNDK</td><td>-3.99%</td><td>—</td><td>NAND Flash价格预期分歧，与HDD形成鲜明对比</td></tr>
+          <tr><td>INTC</td><td>-3%+</td><td>—</td><td>暂无明确个股催化，半导体板块系统性回调</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 3. AI/半导体全产业链 -->
+  <section class="block" id="chain">
+    <h2>三、AI/半导体全产业链</h2>
+
+    <h3>AI模型/应用与资本开支</h3>
+    <ul class="bullets">
+      <li><b>谷歌（GOOGL）</b>：旗舰AI模型Gemini 3.5 Pro因编程能力未达内部预期，交付已延期数月。据彭博援引10名现任及前任员工称，谷歌工程师、AI研究人员和管理层对此感到挫败，担心在Anthropic和OpenAI的竞争中失去市场优势。谷歌6月底曾更新训练数据试图提升编程能力，但结果"令人失望"。当日GOOGL暴跌超4%。验证点是谷歌后续是否公布新的Gemini 3.5 Pro发布时间表，以及7月22日盘后财报中管理层对AI进展的更新口径。</li>
+      <li><b>Meta（META）</b>：据纽约时报引述知情人士，Anthropic正与Meta进行初步谈判，拟租用后者AI算力，潜在交易规模高达100亿美元（两年期）。此举意味着Meta正尝试将其1,450亿美元年度资本开支转化为云计算收入来源。此前Meta已与CoreWeave（210亿美元）和Nebius（270亿美元）签订算力采购合同。验证点是双方是否签署正式协议，以及Meta在7月22日财报中对算力出租业务的进一步披露。</li>
+      <li><b>OpenAI</b>：上周发布GPT-5.6 Sol，CEO Sam Altman称新模型在代理式编程任务中的token使用效率提升54%，显示AI竞争正在从"更大模型"转向"更高效推理"。</li>
+    </ul>
+    <blockquote>"投资者正越来越多地质疑当前AI资本支出热潮的可持续性。国际清算银行在最新年度经济报告中警告称，由颠覆性技术推动的投资热潮，历来都伴随着繁荣与萧条交替的周期性特征。"<cite>—— BBH策略师，2026年7月17日早间报告</cite></blockquote>
+
+    <h3>CSP/云资本开支</h3>
+    <ul class="bullets">
+      <li><b>四大CSP合计capex</b>：据Financial Times汇编，微软、谷歌、亚马逊、Meta四家2026年合计capex约7,250亿美元，同比增长约77%。穆迪已将广义hyperscaler（含Oracle、CoreWeave）2026年capex预测上修至7,850亿美元，并预计2027年逼近1万亿美元。国信证券7月15日专题报告测算，到2030年四大巨头总开支有望超过1.6万亿美元。</li>
+      <li><b>债务融资支撑</b>：2026年前5个月四大巨头已发债1,590亿美元，全年预计新增3,000亿美元。但摩根大通7月14日报告警告称"债券投资者不再无条件为AI扩产买单，融资环境收紧终将限制未来资本开支扩张"。验证点是即将到来的CSP财报季（7月22日起），尤其是capex指引是否继续上调。</li>
+      <li><b>巴克莱</b>：尽管科技股短期波动可能持续，但"仓位重新调整最终将被证明是健康的，为瞄准结构性AI主题的长期投资者创造更具吸引力的入场点"。</li>
+    </ul>
+
+    <h3>AI云/数据中心运营商</h3>
+    <ul class="bullets">
+      <li><b>Meta云业务布局</b>：Meta已聘请前亚马逊云科技高管Dave Brown，并认真考虑进军云计算业务。扎克伯格5月曾表示外界对购买Meta闲置算力"愿意支付溢价"。若与Anthropic的100亿美元算力出租协议达成，将是Meta从纯AI消费者向AI基础设施提供商转型的关键里程碑。验证点是Dave Brown的正式任命公告及云计算业务的具体推出时间表。</li>
+    </ul>
+
+    <h3>GPU/CPU/ASIC</h3>
+    <ul class="bullets">
+      <li><b>英伟达（NVDA）</b>：跌2.21%至202.81美元，连续第二日领跌半导体板块。SMH本周累跌6.9%，费城半导体指数较6月高点已回调近19%，距技术性熊市仅一步之遥。但野村证券7月17日报告指出："市场混淆了现货租金走弱与长期需求崩塌。高端加速器的多年框架合同基本保持完好。近期最大风险是估值下修，而非全供应链订单崩塌。"验证点是7月22日Google财报对AI基础设施支出的表态，以及即将到来的AMD Advancing AI大会对GPU路线图的更新。</li>
+      <li><b>AMD（AMD）</b>：跌1.03%至495.76美元。AMD将于7月22-23日在旧金山举办"Advancing AI 2026"大会，CEO苏姿丰将发表主题演讲，市场关注其下一代AI加速器路线图及与英伟达的竞争格局。高盛此前将AMD目标价上调至640美元。</li>
+      <li><b>摩根大通</b>：7月14日报告指出"现货低端算力过剩，同时下一代顶级训练芯片持续紧缺，二者同时存在"（"Spot-market GPU oversupply coexists with persistent shortages for leading-edge next-generation training chips"），意味着市场需区分结构性过剩与总量过剩。</li>
+    </ul>
+
+    <h3>HBM/DRAM/NAND/SSD/HDD</h3>
+    <ul class="bullets">
+      <li><b>存储板块剧烈分化</b>：希捷（STX）逆市大涨5.66%，西部数据（WDC）涨2.23%，受益于AI数据中心对高容量HDD的结构性需求；而闪迪（SNDK）跌3.99%，反映市场对NAND Flash价格持续性的分歧；美光（MU）仅微跌0.50%，相对抗跌。SK海力士ADS逆市涨1.13%，为一周以来首度收涨。验证点是后续合约价数据能否支撑NAND涨价预期。</li>
+      <li><b>瑞银（UBS）</b>：7月3日大幅上调下半年存储合约价预测——Q3 DDR合约价环比增幅从17%上调至32%，Q4从12%上调至18%；NAND方面Q3从17%上调至30%。预计DRAM供应不足至少持续至2028年Q2，2027年需求位元增长率36.2%而供应仅增长19.3%。存储行业2026年收入预计达9,920亿美元。</li>
+      <li><b>摩根士丹利</b>：7月14日TMT电话会指出，存储仍处于上行周期中后段，但驱动股价的逻辑已从"涨价弹性"切换至"盈利可持续性"。LTA（长期供货协议）提供利润底线而非价格天花板，市场尚未充分定价这一结构性变化。</li>
+      <li><b>铠侠（Kioxia/285A.JP）</b>：日本上市股票跌停（-16.1%），因德州联邦陪审团裁定其侵犯Viasat（VSAT）计算机存储技术专利，判赔2.29亿美元。其市值较6月高点已腰斩。验证点是铠侠上诉进展及该专利纠纷对其NAND业务的实质影响。</li>
+    </ul>
+    <blockquote>"We do not forecast an outright capex decline, only a steep drop in the rate of growth. Hyperscaler spending will continue expanding in absolute terms, but year-over-year percentage gains will normalize from hyper-growth toward mid-teens growth by 2028."<cite>—— JPMorgan 半导体研报，2026年7月14日</cite></blockquote>
+
+    <h3>晶圆代工与先进封装</h3>
+    <ul class="bullets">
+      <li><b>台积电（TSM）</b>：7月16日盘后发布Q2财报全面超预期，将2026全年美元营收增速指引从此前的"超过30%"大幅上调至"超过40%"，全年capex从520-560亿美元上调至600-640亿美元。CEO魏哲家称AI需求"极度强劲"，CoWoS产能"2026年全年售罄"。摩根士丹利7月17日将台积电目标价由NT$2,888上调至NT$2,988，维持增持。高盛将目标价上调至600美元（ADR）。然而当日台积电ADR仍随板块下跌约2%，反映当前的市场情绪压制已超越个股基本面。</li>
+      <li><b>先进封装涨价</b>：日月光（ASX）7月宣布再度调涨先进封装报价，CoWoS和FoCoS品类对美国核心客户涨幅最高超过20%。2026年资本开支提升至85亿美元，同步推进15座新建及扩建厂区。CoWoS供需缺口仍约10%，紧平衡预计持续至2027年。</li>
+      <li><b>CoWoS产能</b>：台积电CoWoS产能约以每年80%速度扩张，目标2026年底达月产12.5-13万片晶圆。验证点是Q3末产能爬坡数据及ASMPT的TCB设备订单节奏。</li>
+    </ul>
+
+    <h3>半导体设备/测试</h3>
+    <ul class="bullets">
+      <li><b>应用材料（AMAT）</b>：暴跌超5%，成为当日设备板块最大输家。但基本面强劲：德意志银行7月8日将其目标价由550美元上调至680美元，花旗由550美元上调至710美元，两家均重申"买入"。德银将2027/2028年全球WFE预测分别上调至1,930亿/2,200亿美元。当日暴跌折射出AI支出信仰动摇下，设备股作为高Beta品种首当其冲的估值压缩。</li>
+      <li><b>泛林集团（LRCX）</b>：跌约3%。德银目标价由325美元上调至385美元，花旗由315美元上调至450美元。验证点是设备公司即将到来的财报季（通常在7月下旬至8月初）中订单和积压数据是否继续超预期。</li>
+      <li><b>科磊（KLAC）</b>：德银目标价由175美元上调至220美元，评级维持"持有"。德银认为其工艺控制业务防御性较好，但产能杠杆弹性不及AMAT和LRCX。</li>
+      <li><b>阿斯麦（ASML）</b>：跌2.09%至1,747.58美元。</li>
+    </ul>
+
+    <h3>PCB/载板/光通信/电源</h3>
+    <ul class="bullets">
+      <li><b>CPO（共封装光学）</b>：2026年被业界视为CPO大规模商用元年。1.6T光模块预计2026年出货规模达2,000万只、市场规模突破146亿美元。英伟达Spectrum-X硅光CPO交换机确认下半年批量交付。高端AI-PCB及覆铜板7月起或统一调涨20%-30%，全球能做20层+超低损耗AI-PCB的厂商有限，认证周期18-24个月。验证点是CPO交换机实际交付量与1.6T光模块出货量数据。</li>
+      <li><b>光芯片短缺</b>：200G EML高端光芯片供需缺口已从25%-30%扩大至超30%，Lumentum订单排到2028年。磷化铟（InP）衬底全球缺口高达70%。这是光通信产业链当前最核心的硬件瓶颈。</li>
+      <li><b>胜宏科技（02476.HK）</b>：野村7月17日下调目标价由HK$479至HK$447，重申"买入"，认为尽管Kyber NVL机架架构推迟引发短期担忧，但下半年Rubin GPU产能将继续支持其PCB价值提升及毛利率扩张。</li>
+    </ul>
+  </section>
+
+  <!-- 4. 互联网/平台 -->
+  <section class="block" id="internet">
+    <h2>四、互联网/平台</h2>
+    <ul class="bullets">
+      <li><b>谷歌（GOOGL）</b>：Gemini 3.5 Pro延期已构成AI竞争格局的重要变量。谷歌原计划5月Google I/O大会后"下月"全面推出，但先推迟至6月再延至7月，截至7月17日仍未全面开放。彭博报道称谷歌甚至完全废弃了原有底层基础模型、转向更长周期的预训练。此事叠加7月22日盘后财报，将是检验市场对谷歌AI战略信心的双重关口。验证点是谷歌是否在财报电话会中给出Gemini 3.5 Pro的明确GA时间表。</li>
+      <li><b>奈飞（NFLX）</b>：暴跌超11%，Q2业绩大致符合预期但Q3盈利指引令市场失望。这已是奈飞连续第二个季度因指引问题导致股价大跌。</li>
+      <li><b>Meta（META）</b>：尽管当日跌2.79%，但与Anthropic的100亿美元算力出租谈判正在为其"过度基建"叙事提供积极转折。此前扎克伯格7月初曾向员工承认AI投资"尚未开花结果"（Reuters），此次出租尝试意味着Meta正从被动承受capex压力转向主动寻求变现。验证点是谈判是否落地，以及Dave Brown入职后的具体战略发布。</li>
+    </ul>
+  </section>
+
+  <!-- 5. 软件/SaaS -->
+  <section class="block" id="software">
+    <h2>五、软件/SaaS</h2>
+    <ul class="bullets">
+      <li><b>微软（MSFT）</b>：据财联社报道，微软正筹备一款对标Anthropic Mythos模型的AI漏洞检测工具Project Perception，计划于7月内发布，预计比Mythos更具成本效益。微软同时面临硬件涨价推高capex 250亿美元的压力（FY2026 Q3电话会披露）。</li>
+      <li><b>DeepMind CEO哈萨比斯</b>：在社交媒体发布长文《前沿人工智能治理框架与新时代的曙光》，呼吁就AI发展制定统一国际准则，称具有人类认知能力的通用人工智能或将在未来几年内出现。</li>
+    </ul>
+    <p class="empty-note">今日该板块其他重要增量信息有限。</p>
+  </section>
+
+  <!-- 6. 消费电子/智能车 -->
+  <section class="block" id="consumer">
+    <h2>六、消费电子/智能车</h2>
+    <ul class="bullets">
+      <li><b>苹果（AAPL）</b>：逆市微涨0.14%，盘中股价升至334.98美元历史新高，市值一度达4.9万亿美元超越英伟达重回全球第一。汇丰7月17日将苹果评级由"持有"上调至"买入"，目标价由260美元大幅上调至366美元，核心逻辑是苹果"避免AI烧钱、后发制人选用最优模型"的策略正在获得市场认可。此外，国行Apple智能（Apple Intelligence）于7月15日通过网信办备案，阿里千问和百度分别提供生成式AI与搜索能力。花旗简报指出，iPhone 18 Pro虽将涨价但高端需求稳固。验证点是9月秋季发布会iPhone 18 Pro的实际定价与预售数据。</li>
+      <li><b>鸿海/富士康</b>：据日经新闻报道，鸿海郑州iPhone组装厂自去年10月以来已裁减约5万名季节性劳工，较往年提前数月，"反映出手机产业遭逢10年来最严重衰退"。这一信号值得与苹果股价的强势形成对比审视——硬件出货承压与AI叙事溢价并存。</li>
+      <li><b>特斯拉（TSLA）</b>：跌2.61%，受整体科技板块拖累。7月22日盘后财报将是关键验证点。</li>
+    </ul>
+  </section>
+
+  <!-- 7. 投行目标价变动 -->
+  <section class="block" id="ratings">
+    <h2>七、过去24小时投行目标价变动</h2>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>标的</th><th>投行</th><th>目标价变化（前值→新值）</th><th>评级动作</th></tr></thead>
+        <tbody>
+          <tr><td>TSMC（2330.TW）</td><td>摩根士丹利</td><td>NT$2,888 → NT$2,988</td><td>维持增持</td></tr>
+          <tr><td>AAPL</td><td>汇丰（HSBC）</td><td>$260 → $366</td><td>持有→买入</td></tr>
+          <tr><td>ASMPT（00522.HK）</td><td>高盛</td><td>HK$118.3 → HK$206</td><td>维持中性</td></tr>
+          <tr><td>胜宏科技（02476.HK）</td><td>野村</td><td>HK$479 → HK$447</td><td>维持买入</td></tr>
+          <tr><td>丘钛科技（01478.HK）</td><td>花旗</td><td>HK$12 → HK$9</td><td>买入→中性</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 8. 卖方研报速览 -->
+  <section class="block" id="research-notes">
+    <h2>八、卖方研报速览</h2>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>机构</th><th>报告标题/主题</th><th>分析师</th><th>发布日期</th><th>核心观点/目标价</th></tr></thead>
+        <tbody>
+          <tr><td>摩根士丹利</td><td>台积电Q2财报点评</td><td>—</td><td>7月17日</td><td>台积电AI半导体业务70-80% CAGR为合理假设；上调目标价至NT$2,988；CSP客户Q2云端capex更新将为重要催化剂</td></tr>
+          <tr><td>摩根士丹利</td><td>TMT Webcast：存储周期步入下半场</td><td>—</td><td>7月14日</td><td>存储仍处上行周期中后段，驱动股价逻辑从"涨价弹性"切换至"盈利可持续性"；LTA提供利润底线而非价格天花板，市场尚未充分定价</td></tr>
+          <tr><td>摩根大通</td><td>半导体行业分析</td><td>—</td><td>7月14日</td><td>AI需求依然强劲，半导体上行周期至少持续至2028年；不预测capex绝对值下滑，仅增速陡峭下行；现货低端算力过剩与顶级训练芯片紧缺并存</td></tr>
+          <tr><td>德意志银行</td><td>半导体设备行业更新：上调WFE预测</td><td>—</td><td>7月8日</td><td>大幅上调2027/2028年WFE至$1,930亿/$2,200亿；AMAT目标$680、LRCX目标$385，均维持买入；KLAC目标$220，维持持有</td></tr>
+          <tr><td>野村证券</td><td>AI算力资本开支周期分析</td><td>—</td><td>7月17日</td><td>市场混淆现货租金走弱与长期需求崩塌；高端加速器多年框架合同基本保持完好；近期最大风险为高预期硬件股的估值下修而非全供应链订单崩塌</td></tr>
+          <tr><td>汇丰</td><td>苹果：AI后发优势显现</td><td>—</td><td>7月17日</td><td>上调苹果至买入，目标价$366；"避免AI烧钱、后发选用最优模型"策略奏效；国行Apple智能通过备案构成额外催化剂</td></tr>
+          <tr><td>国信证券</td><td>北美科技巨头Capex空间测算及ROI回报拆解</td><td>—</td><td>7月15日</td><td>四大巨头capex 2030年可达1.6万亿美元；主权AI成为第二增长极；债务杠杆空间充足，净杠杆仅0-0.2x</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 9. 跨市场提示 -->
+  <section class="block" id="cross-market">
+    <h2>九、跨市场提示</h2>
+    <p>亚洲半导体板块周五遭遇全面抛售，日本日经225指数暴跌4.03%至64,141点，较6月25日历史高点已累计回调11.3%，正式进入修正区间。铠侠跌停（-16.1%，专利侵权判赔2.29亿美元）、Sumco（-15.17%）、Screen Holdings（-12.04%）、Lasertec、Advantest、东京威力等半导体设备及材料股全线下挫10%-15%。台股加权指数大跌5.23%，台积电跌5.1%，南亚科跌9.8%，联电跌停。A股方面，沪指跌3.05%失守3,800点，创业板指暴跌7.15%，科创综指跌8.13%；存储芯片概念板块跌8.84%，CPO概念跌9.19%，光刻机概念跌8.91%。全球半导体抛售的跨市场传导极为剧烈，亚太市场跌幅甚至超过美股本身，显示日韩台作为核心半导体供应链对AI支出预期变化的高弹性。</p>
+  </section>
+
+  <!-- 10. 异动/新兴关注 -->
+  <section class="block" id="emerging">
+    <h2>十、异动/新兴关注</h2>
+    <ul class="bullets">
+      <li><b>AST SpaceMobile（ASTS）</b>：暴跌17.04%，因宣布发行10亿美元1.625%可转换优先票据（2034年到期），初始转换价约79.57美元。此为公司年内第二次10亿美元级可转债发行。同时披露BlueBird卫星发射目标延至2027年初。虽然稀释压力仅约3%，但市场以17%的跌幅回应，反映的是对现金流消耗速度和商业化时间表不确定性的深层担忧。验证点是蓝鸟卫星实际发射进度及2027年初网络商业化的里程碑达成情况。</li>
+      <li><b>苹果市值一度重夺全球第一</b>：盘中AAPL市值短暂超越英伟达，为2026年以来首次。这不是苹果单日涨出来的（仅+0.14%），而是英伟达持续回调跌出来的（较6月高点累计下跌约18%）。这一"换位"本身不改变两家公司的基本面，但作为市场情绪指标——AI算力龙头市值被消费电子龙头反超——不可忽视。验证点是这一定价关系能否在Google/特斯拉/英特尔财报周（7月22-24日）后延续。</li>
+      <li><b>Meta算力出租模式若成，或改写AI基础设施商业逻辑</b>：当前市场对AI capex的核心质疑是"钱花出去了但收入何时来"。Meta与Anthropic的100亿美元算力出租谈判揭示了一条路径：CSP内部过建→算力出租外部变现。若此模式跑通，可能改变市场对AI基建投资回报周期的评估框架。验证点是正式协议签署及财务披露。</li>
+    </ul>
+  </section>
+
+  <p class="disclaimer">本内容基于公开资料整理，不构成任何投资建议，仅供学习参考。</p>
+
+  <nav class="backlink"><a href="../../index.html">← 返回首页</a></nav>
+
+</div>
+</body>
+</html>
