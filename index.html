@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tech Daily Brief · 科技投资早报</title>
+<title>Tech Daily Brief · 科技投资早报 / A股早报</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -11,6 +11,8 @@
   :root{
     --primary:#1F3864;
     --primary-light:#2E5090;
+    --ashare:#7B1E1E;
+    --ashare-light:#A83232;
     --text:#222222;
     --text-light:#555555;
     --border:#E3E7EE;
@@ -66,17 +68,49 @@
     color:var(--text-light);
   }
 
+  /* 报告切换 tab */
+  .report-tabs{
+    display:flex;
+    gap:8px;
+    margin-bottom:28px;
+  }
+  .report-tabs a{
+    flex:1;
+    text-align:center;
+    padding:10px 8px;
+    border-radius:8px;
+    font-size:13.5px;
+    font-weight:700;
+    border:1px solid var(--border);
+    background:#fff;
+    color:var(--text-light);
+  }
+  .report-tabs a.active-tech{color:var(--primary);border-color:var(--primary);}
+  .report-tabs a.active-ashare{color:var(--ashare);border-color:var(--ashare);}
+
+  .section-heading{
+    font-size:15px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    padding-bottom:10px;
+    border-bottom:2px solid var(--primary);
+    margin:36px 0 14px;
+  }
+  .section-heading.ashare{border-bottom-color:var(--ashare);color:var(--ashare);}
+  .section-heading.tech{color:var(--primary);}
+
   .latest-card{
     display:block;
     border:1px solid var(--border);
     border-radius:10px;
     padding:20px;
     background:#fff;
-    margin-bottom:36px;
+    margin-bottom:20px;
     transition:box-shadow .15s ease, transform .15s ease;
   }
   .latest-card:hover{
-    box-shadow:0 4px 16px rgba(31,56,100,.12);
+    box-shadow:0 4px 16px rgba(0,0,0,.10);
     text-decoration:none;
     transform:translateY(-1px);
   }
@@ -85,16 +119,18 @@
     font-size:11.5px;
     font-weight:700;
     color:#fff;
-    background:var(--primary);
     padding:3px 8px;
     border-radius:4px;
     margin-bottom:10px;
     letter-spacing:.03em;
   }
+  .latest-card.tech .label{background:var(--primary);}
+  .latest-card.ashare .label{background:var(--ashare);}
+  .latest-card.tech h2{color:var(--primary);}
+  .latest-card.ashare h2{color:var(--ashare);}
   .latest-card h2{
     font-size:20px;
     font-weight:900;
-    color:var(--primary);
     margin-bottom:8px;
   }
   .latest-card .sub{
@@ -106,19 +142,16 @@
     margin-top:10px;
     font-size:13.5px;
     font-weight:700;
-    color:var(--primary-light);
+  }
+  .latest-card.tech .cta{color:var(--primary-light);}
+  .latest-card.ashare .cta{color:var(--ashare-light);}
+  .latest-card .placeholder-note{
+    font-size:13px;
+    color:var(--text-light);
+    font-style:italic;
   }
 
-  section.archive h2.section-title{
-    font-size:15px;
-    font-weight:700;
-    color:var(--primary);
-    text-transform:uppercase;
-    letter-spacing:.05em;
-    padding-bottom:10px;
-    border-bottom:2px solid var(--primary);
-    margin-bottom:14px;
-  }
+  section.archive{margin-bottom:32px;}
 
   details.month-group{
     border:1px solid var(--border);
@@ -141,6 +174,7 @@
     justify-content:space-between;
     align-items:center;
   }
+  .archive.ashare details.month-group summary{color:var(--ashare);}
   details.month-group summary::-webkit-details-marker{display:none;}
   details.month-group summary::after{
     content:"+";
@@ -193,29 +227,39 @@
 </head>
 <body>
 
-<div class="topbar">Tech Daily Brief · 科技投资早报</div>
+<div class="topbar">Tech Daily Brief · 科技投资早报 / A股早报</div>
 
 <div class="wrap">
 
   <header class="hero">
-    <div class="kicker">Morning Brief in the Tech Sector</div>
-    <h1>科技投资早报</h1>
-    <p class="tagline">覆盖 AI / 半导体全产业链的机构级科技早报，每个交易日更新。</p>
+    <div class="kicker">Daily Market Briefs</div>
+    <h1>投资早报中心</h1>
+    <p class="tagline">科技早报覆盖 AI / 半导体全产业链，A股早报覆盖国内市场行情与科技链动态，每个交易日更新。</p>
   </header>
 
-  <!-- 最新一期 -->
-  <a class="latest-card" href="archive/2026-07/2026-07-28.html">
+  <div class="report-tabs">
+    <a href="#tech-section" class="active-tech">科技早报（美股）</a>
+    <a href="#ashare-section" class="active-ashare">A股早报</a>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- TECH_SECTION_START —— 以下到 TECH_SECTION_END 由「科技早报」定时任务维护，请勿在此区域外维护科技早报内容 -->
+  <!-- ============================================================ -->
+  <div id="tech-section">
+  <h2 class="section-heading tech">科技早报</h2>
+
+  <!-- TECH_LATEST_START -->
+  <a class="latest-card tech" href="archive/2026-07/2026-07-28.html">
     <span class="label">最新一期</span>
     <h2>科技早报 2026-07-28</h2>
     <div class="sub">芯片股遭遇中国冲击 · 循环融资担忧升温 · 苹果逆势创历史新高</div>
     <div class="sub">第 15 期</div>
     <div class="cta">阅读全文 →</div>
   </a>
+  <!-- TECH_LATEST_END -->
 
-  <!-- 历史归档，按月份分组，可折叠 -->
-  <section class="archive">
-    <h2 class="section-title">历史归档</h2>
-
+  <!-- TECH_ARCHIVE_START -->
+  <section class="archive tech">
     <details class="month-group" open>
       <summary>2026年7月 <span class="count">14 期</span></summary>
       <ul class="day-list">
@@ -241,10 +285,47 @@
       1. 将当天的报告页面放入 archive/YYYY-MM/YYYY-MM-DD.html（可直接复制 template.html 并替换占位符）
       2. 在上方对应月份的 <ul class="day-list"> 中新增一个 <li><a>...</a></li>
       3. 如果是新的月份，复制一份 <details class="month-group">...</details> 区块，修改月份标题
-      4. 更新上方“最新一期”卡片指向最新的一天
+      4. 更新上方 TECH_LATEST 卡片指向最新的一天
     -->
-
   </section>
+  <!-- TECH_ARCHIVE_END -->
+
+  </div>
+  <!-- ============================================================ -->
+  <!-- TECH_SECTION_END -->
+  <!-- ============================================================ -->
+
+
+  <!-- ============================================================ -->
+  <!-- ASHARE_SECTION_START —— 以下到 ASHARE_SECTION_END 由「A股早报」定时任务维护，请勿在此区域外维护A股早报内容 -->
+  <!-- ============================================================ -->
+  <div id="ashare-section">
+  <h2 class="section-heading ashare">A股早报</h2>
+
+  <!-- ASHARE_LATEST_START -->
+  <div class="latest-card ashare">
+    <span class="label">尚未生成</span>
+    <h2>A股早报</h2>
+    <div class="placeholder-note">首期将于明天早上7:30由定时任务自动生成，生成后本卡片会自动更新为最新一期的链接。</div>
+  </div>
+  <!-- ASHARE_LATEST_END -->
+
+  <!-- ASHARE_ARCHIVE_START -->
+  <section class="archive ashare">
+    <!--
+      新增一期时：
+      1. 将当天的报告页面放入 archive-ashare/YYYY-MM/YYYY-MM-DD.html（可直接复制 template-ashare.html 并替换占位符）
+      2. 在下方新增/找到对应月份的 <details class="month-group">，在其 <ul class="day-list"> 顶部插入新的一条 <li><a>...</a></li>
+      3. 如果是新的月份，复制一份 <details class="month-group">...</details> 区块，修改月份标题
+      4. 更新上方 ASHARE_LATEST 卡片指向最新的一天
+    -->
+  </section>
+  <!-- ASHARE_ARCHIVE_END -->
+
+  </div>
+  <!-- ============================================================ -->
+  <!-- ASHARE_SECTION_END -->
+  <!-- ============================================================ -->
 
   <footer class="site-footer">
     © Tech Daily Brief · 内容仅供学习参考，不构成投资建议
