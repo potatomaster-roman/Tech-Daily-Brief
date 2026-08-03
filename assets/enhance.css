@@ -1,0 +1,143 @@
+/* ============================================================
+   Tech-Daily-Brief / A-Share Daily Brief 站点增强样式
+   由 Claude 于用户要求下添加：段落间距、吸顶页头、目录导航
+   通过 <link> 引入，加载顺序晚于各页面内联 <style>，
+   同选择器的规则会自然覆盖前面的声明，无需 !important。
+   ============================================================ */
+
+html{ scroll-behavior:smooth; }
+
+/* ---------- 1. 段落 / 区块间距加大 ---------- */
+section.block{ margin:42px 0; }
+section.block p{ margin:0 0 14px; }
+section.block p:last-child{ margin-bottom:0; }
+section.block h3{ margin:22px 0 10px; }
+ul.bullets li{ margin-bottom:14px; }
+blockquote{ margin:18px 0; }
+.table-scroll{ margin:16px 0; }
+header.hero{ margin-bottom:30px; }
+
+/* ---------- 2. 吸顶页头（所有页面通用的基础兜底，纯 CSS，不依赖 JS） ---------- */
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:200;
+}
+
+/* JS 会把 .topbar（以及紧随其后的生成时间行）包进这个容器，
+   容器整体吸顶，视觉上作为一个整体页头悬浮 */
+.site-sticky-header{
+  position:sticky;
+  top:0;
+  z-index:200;
+  background:var(--bg);
+  box-shadow:0 2px 10px rgba(0,0,0,.10);
+}
+.site-sticky-header .topbar{
+  position:static; /* 已经在吸顶容器里了，自身不用再吸顶 */
+  box-shadow:none;
+}
+.site-sticky-header .gentime,
+.site-sticky-header .gen-time{
+  background:var(--bg);
+}
+
+/* 页头内的功能条：目录按钮 + 返回首页 */
+.site-header-controls{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  background:var(--primary-light,var(--primary));
+  color:#fff;
+  padding:7px 14px;
+  font-size:12.5px;
+}
+.site-header-controls .toc-toggle{
+  background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.4);
+  color:#fff;
+  border-radius:5px;
+  padding:4px 11px;
+  font-size:12.5px;
+  font-family:inherit;
+  line-height:1.6;
+  cursor:pointer;
+}
+.site-header-controls .toc-toggle:hover{ background:rgba(255,255,255,.3); }
+.site-header-controls .home-link{
+  color:#fff;
+  font-size:12.5px;
+  font-weight:700;
+  white-space:nowrap;
+}
+.site-header-controls .home-link:hover{ text-decoration:underline; }
+
+/* ---------- 3. 桌面端左侧目录（宽屏才显示） ---------- */
+.toc-sidebar{
+  position:fixed;
+  width:206px;
+  max-height:72vh;
+  overflow-y:auto;
+  padding:6px 4px 6px 0;
+  font-size:13px;
+  display:none;
+}
+.toc-sidebar .toc-title{
+  font-size:11px;
+  color:var(--text-light);
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  margin-bottom:8px;
+  padding-left:11px;
+}
+.toc-sidebar a{
+  display:block;
+  padding:6px 11px;
+  border-left:2px solid var(--border);
+  color:var(--text-light);
+  line-height:1.4;
+  margin-bottom:1px;
+}
+.toc-sidebar a:hover{ color:var(--primary); background:rgba(0,0,0,.03); text-decoration:none; }
+.toc-sidebar a.active{
+  border-left:2px solid var(--primary);
+  color:var(--primary);
+  font-weight:700;
+  background:rgba(0,0,0,.04);
+}
+
+@media (min-width:1150px){
+  .toc-sidebar{ display:block; }
+  .site-header-controls .toc-toggle{ display:none; }
+}
+
+/* ---------- 4. 窄屏目录抽屉（点击“☰ 目录”弹出） ---------- */
+.toc-drawer{
+  position:fixed;
+  left:0; right:0;
+  max-height:65vh;
+  overflow-y:auto;
+  background:var(--bg);
+  border-bottom:1px solid var(--border);
+  box-shadow:0 10px 24px rgba(0,0,0,.18);
+  z-index:199;
+  padding:6px 0;
+  display:none;
+}
+.toc-drawer.open{ display:block; }
+.toc-drawer a{
+  display:block;
+  padding:11px 20px;
+  font-size:14px;
+  color:var(--text);
+  border-bottom:1px solid var(--border);
+}
+.toc-drawer a.active{ color:var(--primary); font-weight:700; background:var(--stripe); }
+
+@media (min-width:1150px){
+  .toc-drawer{ display:none !important; }
+}
+
+/* ---------- 5. 锚点跳转时不被吸顶页头遮挡 ---------- */
+section.block[id]{ scroll-margin-top:var(--toc-offset,96px); }
