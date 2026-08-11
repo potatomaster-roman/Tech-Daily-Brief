@@ -37,13 +37,19 @@
     padding:8px 16px;
     text-align:center;
   }
+  .genline{
+    background:#F6ECEC;
+    color:var(--text-light);
+    font-size:11.5px;
+    text-align:center;
+    padding:4px 16px;
+  }
   .wrap{max-width:var(--max-width);margin:0 auto;padding:0 16px 48px;}
   header.hero{padding:28px 0 18px;border-bottom:1px solid var(--border);margin-bottom:20px;}
   header.hero .kicker{font-size:12.5px;color:var(--text-light);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;}
   header.hero h1{font-size:26px;font-weight:900;color:var(--primary);line-height:1.3;}
   header.hero .subtitle{margin-top:10px;font-size:14.5px;color:var(--text-light);}
   header.hero .subtitle span{display:inline-block;margin-right:6px;}
-  header.hero .gen-time{margin-top:6px;font-size:12px;color:#999;}
 
   section.block{margin:28px 0;}
   section.block h2{font-size:17px;font-weight:700;color:var(--primary);padding-top:12px;margin-bottom:12px;border-top:2px solid var(--primary);}
@@ -93,12 +99,14 @@
     ul.bullets li{font-size:15px;}
   }
 </style>
-<link rel="stylesheet" href="assets/enhance.css">
-<script src="assets/enhance.js" defer></script>
+<link rel="stylesheet" href="../../assets/enhance.css">
+<script src="../../assets/enhance.js" defer></script>
 </head>
 <body>
 
 <div class="topbar">A股投资早报 | 2026-08-11 | 第10期 · by potatomaster</div>
+<div class="genline">生成时间：北京时间 2026-08-11 07:30</div>
+<div class="genline" style="background:#EFDFDF;font-weight:600;">数据覆盖：A股 2026-08-10（星期一）收盘</div>
 
 <div class="wrap">
 
@@ -108,8 +116,6 @@
     <div class="subtitle">
       <span>沪指录得5连阳</span>·<span>医药消费跷跷板反弹</span>·<span>通信光模块资金撤离</span>
     </div>
-    <div class="gen-time">生成时间：北京时间 2026-08-11 07:30</div>
-    <div class="cover-note" style="margin-top:4px;font-size:13.5px;color:var(--text-light);">数据覆盖：A股 2026-08-10（星期一）收盘</div>
   </header>
 
   <!-- 1. 盘面总结 -->
@@ -254,6 +260,16 @@
     <h2>九、跨市场提示</h2>
     <p>隔夜美股（8月10日美东时段中段口径）三大指数集体小幅走弱：道指报53939.01点，跌0.18%；纳斯达克指数报26582.40点，跌0.41%；标普500指数报7751.52点，跌0.08%。亚太市场当日则表现分化偏强：日经225指数收涨2.08%，报66970.22点；韩国KOSPI指数收涨0.65%，报6299.66点，主因美联储降息预期升温带动市场风险偏好回暖。整体看，海外流动性预期边际改善为A股科技股企稳提供一定外部支撑，但北美光模块厂商扩产（如AAOI二季度业绩大超预期并披露激进扩产计划）与半导体出口管制政策的边际变化，仍是需要持续跟踪的外部变量。</p>
 
+  </section>
+
+  
+  <!-- 10. 异动/新兴关注 -->
+  <section class="block" id="hot-signals">
+    <h2>十、异动/新兴关注</h2>
+    <ul class="bullets">
+      <li><b>长鑫科技（688825）</b>：8月10日被正式纳入MSCI中国全股票指数生效，这是MSCI在其7月27日上市次日即启动纳入流程后的正式落地（7月28日MSCI公告，8月10日生效）（来源：财联社、东方财富）→ 机制层：作为今年科创板最大IPO及A股存储芯片龙头，纳入MSCI意味着追踪该指数的国际被动资金将按权重强制配置，为存储芯片国产化板块带来增量长线资金 → 验证点是后续跟踪MSCI相关ETF/基金的被动配置资金流入规模，以及长鑫科技股价、成交额在纳入生效后数个交易日是否出现明显的被动资金痕迹。</li>
+      <li><b>通宇通讯（002792）</b>：8月10日股价下跌8.31%并因日跌幅偏离值触发龙虎榜，但当日机构席位净买入7.07亿元，是当日机构净买入额居前的个股，形成"股价下跌、机构逆势加仓"的量价背离信号（详见第四节龙虎榜；来源：证券之星、21财经）→ 机制层：可能反映短线游资兑现获利了结与机构逢低吸筹之间的分歧，公司此前因连续三个交易日涨幅偏离值累计超20%触发异常波动核查，基本面上扣非净利润已连续三年为负 → 验证点是后续交易日机构席位是否延续净买入、公司异常波动核查结果，以及基本面改善能否兑现，警惕单纯情绪博弈落空的风险。</li>
+    </ul>
   </section>
 
   <p class="disclaimer">本内容基于公开资料整理，不构成任何投资建议，仅供学习参考。第八节"市场段子/小作文"内容尤其仅为市场情绪观察，不代表事实或机构观点。</p>
