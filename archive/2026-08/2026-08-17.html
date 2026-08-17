@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>科技早报 2026-08-17 | 第26期 · by potatomaster</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --primary:#1F3864;
+    --primary-light:#2E5090;
+    --text:#222222;
+    --text-light:#555555;
+    --border:#E3E7EE;
+    --stripe:#F2F2F2;
+    --bg:#FAFBFC;
+    --max-width:760px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+    font-size:15px;
+    line-height:1.7;
+    color:var(--text);
+    background:var(--bg);
+  }
+  a{color:var(--primary-light);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  .topbar{
+    background:var(--primary);
+    color:#fff;
+    font-size:12.5px;
+    letter-spacing:.02em;
+    padding:8px 16px;
+    text-align:center;
+  }
+  .genline{
+    text-align:center;
+    font-size:11.5px;
+    color:var(--text-light);
+    padding:6px 16px 0;
+  }
+  .wrap{
+    max-width:var(--max-width);
+    margin:0 auto;
+    padding:0 16px 48px;
+  }
+  header.hero{
+    padding:28px 0 18px;
+    border-bottom:1px solid var(--border);
+    margin-bottom:20px;
+  }
+  header.hero .kicker{
+    font-size:12.5px;
+    color:var(--text-light);
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    margin-bottom:8px;
+  }
+  header.hero h1{
+    font-size:26px;
+    font-weight:900;
+    color:var(--primary);
+    line-height:1.3;
+  }
+  header.hero .coverage{
+    margin-top:8px;
+    font-size:15px;
+    color:var(--text);
+    font-weight:500;
+  }
+  header.hero .subtitle{
+    margin-top:10px;
+    font-size:14.5px;
+    color:var(--text-light);
+  }
+  header.hero .subtitle span{
+    display:inline-block;
+    margin-right:6px;
+  }
+
+  section.block{
+    margin:28px 0;
+  }
+  section.block h2{
+    font-size:17px;
+    font-weight:700;
+    color:var(--primary);
+    padding-top:12px;
+    margin-bottom:12px;
+    border-top:2px solid var(--primary);
+  }
+  section.block h3{
+    font-size:14.5px;
+    font-weight:700;
+    color:#111;
+    margin:14px 0 8px;
+  }
+  section.block p.empty-note{
+    color:var(--text-light);
+    font-size:14px;
+    font-style:normal;
+  }
+  section.block p{
+    margin-bottom:10px;
+  }
+
+  ul.bullets{
+    list-style:none;
+    padding:0;
+  }
+  ul.bullets li{
+    position:relative;
+    padding-left:16px;
+    margin-bottom:10px;
+    font-size:14.5px;
+  }
+  ul.bullets li::before{
+    content:"•";
+    position:absolute;
+    left:0;
+    color:var(--primary);
+    font-weight:700;
+  }
+  ul.bullets li b{color:#111;}
+
+  blockquote{
+    margin:14px 0;
+    padding:10px 14px;
+    border-left:3px solid var(--primary);
+    background:#F5F7FB;
+    font-size:13.5px;
+    color:var(--text-light);
+    font-style:italic;
+  }
+  blockquote cite{
+    display:block;
+    margin-top:6px;
+    font-style:normal;
+    font-size:12.5px;
+    color:var(--primary);
+  }
+
+  .table-scroll{
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    margin:12px 0;
+    border:1px solid var(--border);
+    border-radius:6px;
+  }
+  table{
+    width:100%;
+    min-width:480px;
+    border-collapse:collapse;
+    font-size:13px;
+  }
+  thead th{
+    background:var(--primary);
+    color:#fff;
+    text-align:left;
+    padding:9px 10px;
+    font-weight:700;
+    white-space:nowrap;
+  }
+  tbody td{
+    padding:8px 10px;
+    border-bottom:1px solid var(--border);
+  }
+  tbody tr:nth-child(even){background:var(--stripe);}
+
+  .disclaimer{
+    margin-top:36px;
+    padding-top:14px;
+    border-top:1px solid var(--border);
+    font-size:12px;
+    color:var(--text-light);
+  }
+
+  nav.backlink{
+    margin:20px 0 0;
+    font-size:13.5px;
+  }
+
+  @media (min-width:600px){
+    body{font-size:16px;}
+    header.hero h1{font-size:30px;}
+    section.block h2{font-size:19px;}
+    ul.bullets li{font-size:15px;}
+  }
+</style>
+<link rel="stylesheet" href="../../assets/enhance.css">
+<script src="../../assets/enhance.js" defer></script>
+</head>
+<body>
+
+<div class="topbar">科技投资早报 | 2026-08-17 | 第26期 · by potatomaster</div>
+<div class="genline">生成时间：北京时间 2026-08-17 08:55</div>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="kicker">Tech Daily Brief · 机构级科技早报</div>
+    <h1>科技早报 2026-08-17</h1>
+    <div class="coverage">数据覆盖：美股 2026-08-14（星期五）收盘（因周末/假期顺延）</div>
+    <div class="subtitle">
+      <span>存储链逆势领涨</span>·<span>AI融资风险浮现</span>·<span>软件云端强劲复苏</span>
+    </div>
+  </header>
+
+  <!-- 1. 盘后总结 -->
+  <section class="block" id="summary">
+    <h2>一、盘后总结</h2>
+    <p>美股三大指数8月14日（周五）小幅收跌：标普500指数收报7,785.76点，跌0.17%，此前一日曾首次突破7,800点创历史新高；道指收报53,732.41点，跌0.20%；纳斯达克综合指数收报26,729.16点，跌0.28%，纳斯达克100指数收报30,046.14点，跌0.13%；罗素2000指数逆势收涨0.51%至3,068.42点；VIX恐慌指数收报14.25，跌2.60%，仍处低波动区间。当日拖累大盘的主因是密歇根大学8月消费者信心指数初值降至51（前值55.2），以及7月零售销售环比九个月来首次下滑。值得注意的是，资金在当日并未整体撤离科技股，而是明显转向半导体/存储链内部的结构性机会，而非追高权重股。</p>
+    <p>主题ETF层面，VanEck半导体ETF（SMH）收于587.82美元，跌0.22%，但当周（8/10-8/14）累计上涨约3.2%（569.41→587.82）；据ETF Trends及多方报道，SMH、iShares半导体ETF（SOXX）及三倍做多半导体ETF（SOXL）当周吸引了半导体主题ETF历史上最大规模的单周资金净流入。科技板块ETF（XLK）收于190.01美元，跌0.40%，跑输SMH，显示资金更偏好半导体/存储细分而非泛科技权重股。轮动的核心逻辑是：AI基础设施建设的"卖水人"（存储、先进封装）本周表现优于部分"卖铲人"中的核心逻辑芯片名称，后者受到融资结构和估值消化的双重压力。</p>
+    <p>个股层面分化剧烈：半导体设备龙头应用材料（AMAT）三季度业绩超预期并上调指引，股价却大跌逾5%；博通（AVGO）因美银测算其AI芯片融资平台潜在债务规模高达3,700亿美元而下跌近6%；AMD受Baird上调目标价至街头最高的1,250美元刺激，延续财报后升势，年内涨幅已达约130%。云端方向，CoreWeave本周三（8/11）公布二季度财报后一度暴涨近19%；软件股Salesforce、ServiceNow、Workday当周集体强劲反弹。整体看，半导体链与M7权重股（尤其Meta、微软、亚马逊等云资本开支主线）的相对强弱本周让位于存储/云运营商与传统逻辑芯片龙头之间更细颗粒度的分化。</p>
+  </section>
+
+  <!-- 2. 个股榜单 -->
+  <section class="block" id="leaderboard">
+    <h2>二、个股榜单</h2>
+    <h3>创52周新高</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>标的</th><th>涨跌幅</th><th>成交额</th><th>事件驱动</th></tr></thead>
+        <tbody>
+          <tr><td>SanDisk (SNDK)</td><td>+5.7%~7%（两个口径，见存储板块）</td><td>未获精确数据</td><td>投资者日"底价长约"模式获认可，年内累计涨541%</td></tr>
+          <tr><td>Western Digital (WDC)</td><td>+1.4%~4%（两个口径）</td><td>未获精确数据</td><td>存储链情绪外溢，跟涨SanDisk</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="empty-note">据Trefis统计，8月14日前后标普500成分股中共27只创52周新高，其中"科技硬件、存储与外围设备"类目以4只标的数量领跑所有细分行业，SanDisk、Western Digital位列其中；纳斯达克综合指数当日新增68只52周新高、47只新低。</p>
+    <h3>成交额前十（部分，按活跃度）</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>标的</th><th>涨跌幅</th><th>成交量</th><th>事件驱动</th></tr></thead>
+        <tbody>
+          <tr><td>NVIDIA (NVDA)</td><td>-0.06%</td><td>75.2M股</td><td>暂无明确单一催化，AI算力枢纽地位持续获资金关注</td></tr>
+          <tr><td>Tesla (TSLA)</td><td>+0.68%</td><td>44.8M股</td><td>暂无</td></tr>
+          <tr><td>Palantir (PLTR)</td><td>-2.78%</td><td>23.9M股</td><td>暂无，财报后获利了结延续</td></tr>
+          <tr><td>Taiwan Semiconductor ADR (TSM)</td><td>-0.96%</td><td>6.3M股</td><td>暂无，台股尾盘回吐涨幅</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>涨幅榜</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>标的</th><th>涨跌幅</th><th>事件驱动</th></tr></thead>
+        <tbody>
+          <tr><td>Reddit (RDDT)</td><td>盘中一度+14%</td><td>确认将纳入标普500指数</td></tr>
+          <tr><td>SanDisk (SNDK)</td><td>+5.7%~7%（两个口径）</td><td>投资者日新商业模式获分析师背书</td></tr>
+          <tr><td>SK Hynix / Western Digital（美股相关联动）</td><td>+7%左右（据24/7 Wall St口径）</td><td>存储链情绪回暖</td></tr>
+          <tr><td>AMD</td><td>收报$514.39，延续财报后升势</td><td>Baird目标价上调至$1,250（街头最高）</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>跌幅榜</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>标的</th><th>涨跌幅</th><th>事件驱动</th></tr></thead>
+        <tbody>
+          <tr><td>Broadcom (AVGO)</td><td>-5.9%（收$392.99）</td><td>BofA测算AI芯片融资平台(XPV)潜在债务规模达3,700亿美元</td></tr>
+          <tr><td>Applied Materials (AMAT)</td><td>-5.24%（收$506.51）</td><td>三季报超预期但估值已高企，叠加中国区收入占比降至28%</td></tr>
+          <tr><td>TSMC ADR (TSM)</td><td>-0.96%</td><td>暂无</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 3. AI/半导体全产业链 -->
+  <section class="block" id="chain">
+    <h2>三、AI/半导体全产业链</h2>
+
+    <h3>AI模型/应用与资本开支</h3>
+    <ul class="bullets">
+      <li><b>Anthropic</b>：二季度营收109亿美元，同比增长130%，首次实现单季运营盈利5.59亿美元，较公司自身规划提前约两年；企业客户贡献约80%总收入，超30万家企业使用Claude系列工具，Claude Code年化收入（ARR）已接近10亿美元 → 验证点是三季度企业收入占比能否维持、运营利润率是否持续为正。</li>
+      <li><b>OpenAI</b>：据报道其IPO所需的S-1文件"随时"可能提交至SEC（未经公司正式确认），届时将首次披露经审计财务数据及与微软的收入分成条款；此前披露的年化收入运行率约250亿美元（截至2月），此后大体维持在该水平 → 验证点是S-1是否如期递交、披露的实际净利润/亏损规模。</li>
+      <li><b>xAI</b>：已于2026年2月并入SpaceX，合并后估值约1.25万亿美元（市场口径，未逐一核实） → 验证点是后续独立财务披露（如有）。</li>
+    </ul>
+
+    <h3>CSP/云资本开支</h3>
+    <ul class="bullets">
+      <li><b>四大云厂商（Amazon/Microsoft/Alphabet/Meta）</b>：2026年资本开支合计指引已升至约7,250亿美元，较2025年约4,100亿美元增长约77%；其中Amazon约2,000亿美元居首，Microsoft约1,900亿美元，Alphabet在二季度财报后将上限上修至1,750亿-2,050亿美元区间，Meta两次上修后升至1,250亿-1,450亿美元 → 验证点是三季度财报中各家capex指引是否再度上修、电力/土地等外部约束能否实质缓解。</li>
+      <li><b>Microsoft Azure</b>：本季度云收入增速约40%，但因电力等基础设施瓶颈，公司披露约800亿美元订单积压尚未能兑现为收入 → 验证点是后续季度积压订单向收入的转化速度。</li>
+    </ul>
+
+    <h3>AI云/数据中心运营商</h3>
+    <ul class="bullets">
+      <li><b>CoreWeave (NASDAQ:CRWV)</b>：二季度营收25.75亿美元，同比增长112%、环比增长24%，超市场预期的25.6亿美元；收入积压订单（backlog）增至1,042亿美元，同比增长246%（该数字尚不含三季度以来新增的逾250亿美元新签约）；公司将全年营收指引上调至124亿-132亿美元，三季度营收指引34.5亿-36亿美元，高于市场此前34.3亿美元的预期；年底活跃电力目标上修至1.85吉瓦以上。财报公布后（8/11）股价一度飙升近19% → 验证点是backlog向实际确认收入的转化节奏、资本开支强度对自由现金流的侵蚀程度。</li>
+    </ul>
+    <blockquote>"In this quarter, they delivered."<cite>—— Bernstein分析师 Madison Rezaei（此前对CoreWeave执行力持批评态度，财报后仍维持Underperform评级，因债务与长期算力经济性仍存疑虑）</cite></blockquote>
+
+    <h3>GPU/CPU/ASIC</h3>
+    <ul class="bullets">
+      <li><b>AMD (NASDAQ:AMD)</b>：Baird分析师Tristan Gerra于8月12日将目标价从625美元大幅上调至1,250美元（街头最高），维持Outperform评级，主要基于AI GPU平台及Helios机架级方案放量预期，模型测算2030年AI GPU收入有望达1,470亿美元（对应约15%数据中心加速卡市场份额假设）。公司二季度收入115.4亿美元，同比增长50.1%，数据中心收入翻倍至67.2亿美元 → 验证点是Helios平台实际出货规模、超大规模客户订单公开披露情况。</li>
+      <li><b>Broadcom (NASDAQ:AVGO)</b>：美银分析师Tom Curcuruto测算，博通与Apollo、Blackstone共同设立的AI芯片融资载体（XPV）到2029年年中优先级债务规模或达3,700亿美元（含2027年单年新发行约1,500亿美元），博通为部分客户租赁义务提供担保；市场解读为融资结构杠杆担忧而非需求本身走弱（公司二季度收入221.9亿美元，同比增长47.9%，AI芯片收入同比增长143%）。股价8/14下跌5.9%至392.99美元 → 验证点是XPV后续债券发行定价与利差、担保客户（如OpenAI等）的履约情况、博通自身资产负债表担保敞口披露。</li>
+    </ul>
+
+    <h3>HBM/DRAM/NAND/SSD/HDD</h3>
+    <ul class="bullets">
+      <li><b>SanDisk (NASDAQ:SNDK)</b>：投资者日（8/13）公布新商业模式，8份"新商业模式协议"合同总价值939亿美元，锁定约FY27一半、FY28三分之二的位元出货量及"底价"，管理层预计FY28-30营收保持中高双位数增长，调整后毛利率约80%、营业利润率约75%（上季度调整后毛利率已达84.6%，去年同期为26.4%）。Evercore ISI分析师Amit Daryanani重申Outperform评级、目标价2,800美元；Argus Research的Jim Kelleher此前将评级上调至Buy（目标价1,600美元）；但Jefferies分析师Blayne Curtis将目标价从3,000美元下调至1,750美元（仍维持Buy），理由是NAND价格边际转弱、毛利率指引下修及近期位元出货量存疑。股价8/13大涨13.7%至1,528.11美元，8/14继续走高（市场报道口径不一：一说涨约5.7%，另一说涨约7%至1,630美元附近，两个口径并存），年内累计涨幅达541% → 验证点是RBC Capital分析师Srini Pajjuri所提示的"底价长约"经济性尚未经历完整下行周期检验，后续需观察真实周期中的合约执行情况；另需跟踪与SK Hynix联合推出的HBF（高带宽闪存）开放标准明年样品出货节奏（Google已加入该联盟）。</li>
+      <li><b>Western Digital (NASDAQ:WDC) / Micron (NASDAQ:MU)</b>：同步受益于存储链情绪回暖，8/14两地报道口径不一：路透系统口径显示WDC上涨1.4%，24/7 Wall St口径则报道WDC上涨约4%至505美元、Micron上涨约3%-4%；两个口径并存，具体以后续官方收盘数据为准。Mizuho分析师Vijay Rakesh近期与美光管理层交流后重申Outperform评级、目标价1,375美元，认为DRAM/NAND供给紧张可能持续至2027年，实质性新增产能或要到2028年才能释放。</li>
+      <li><b>行业供给面</b>：据TrendForce等机构预测，2026年常规DRAM合约价同比涨幅或达55%-60%，NAND合约价涨幅约33%-38%，服务器DRAM涨幅或超60%；SK Hynix表示其HBM/DRAM/NAND产能2026年已"基本售罄"，三星电子HBM全年产能同样已预售一空 → 验证点是三季度DRAM/NAND现货与合约价环比走势、服务器OEM是否因涨价推迟采购计划。</li>
+    </ul>
+
+    <h3>晶圆代工与先进封装</h3>
+    <ul class="bullets">
+      <li><b>台积电 (NYSE:TSM)</b>：8月11日宣布其5.5x CoWoS先进封装方案已进入量产，部分产线良率超98%（个别案例达99%），单载板最多可容纳12层HBM4堆叠；公司计划年底前将月度CoWoS产能扩至14万片，加上外包封测（OSAT）合作伙伴新增的5万-6万片，行业总产能或逼近20万片/月，公司目前运营10座先进封装厂。ADR于8/14收报426.35美元，跌0.96%，台北时间当日台股尾盘回吐涨幅收跌 → 验证点是14万片/月产能目标能否按期达成、此前预测的CoWoS供需缺口（年底前从20%收窄至10%）是否兑现。</li>
+      <li><b>三星电子 / Broadcom</b>：两家公司于7月25日宣布为期五年（至2030年）、总额逾2,000亿美元的战略合作，聚焦三星2纳米及以下先进制程为博通代工通信类ASIC芯片，并在下一代HBM及2.3D/2.5D先进封装领域展开协作，作为三星拓展代工客户、缩小与台积电差距的关键订单（发布已超过5个交易日，作为背景铺垫呈现，非本期增量信息） → 验证点是后续季度实际产能爬坡与流片节奏披露。</li>
+    </ul>
+
+    <h3>半导体设备/测试</h3>
+    <ul class="bullets">
+      <li><b>Applied Materials (NASDAQ:AMAT)</b>：公司发布的2026财年三季度业绩每股收益3.50美元、营收91.2亿美元，均超市场预期（3.40美元/89.9亿美元）；公司指引四季度营收102.5亿美元（±5亿美元）、non-GAAP每股收益4.02美元（±0.20美元），亦高于市场此前约96亿美元的预期。但股价随后下跌逾5%至506.51美元，主因公司股价年内已累计上涨超100%，对应2027年预期市盈率约29倍，估值已充分计入AI设备需求预期，"仅仅超预期"已不足以进一步推高股价；此外中国区收入占比由去年同期约35%降至本季约28%，引发市场对中国需求可持续性的关注 → 验证点是四季度实际交付及中国区收入占比是否进一步下滑，需澄清的是股价回调反映的是估值消化而非公司基本面证据本身。</li>
+    </ul>
+
+    <h3>PCB/载板/光通信/电源</h3>
+    <p class="empty-note">本报告期该板块无重大增量个股事件；此前英伟达合计40亿美元入股Lumentum、Coherent以锁定磷化铟（InP）激光芯片产能的部署，以及OFC 2026上多家厂商展示的1.6T光模块与共封装光学（CPO）方案，均已是既有信息，本期不再重复呈现。</p>
+  </section>
+
+  <!-- 4. 互联网/平台 -->
+  <section class="block" id="internet">
+    <h2>四、互联网/平台</h2>
+    <ul class="bullets">
+      <li><b>Reddit (NASDAQ:RDDT)</b>：8月14日确认将被纳入标普500指数，消息公布后盘中一度上涨14% → 验证点是正式生效日期及被动基金增持规模。</li>
+    </ul>
+    <p class="empty-note">其余互联网/平台个股本报告期无重要增量信息。</p>
+  </section>
+
+  <!-- 5. 软件/SaaS -->
+  <section class="block" id="software">
+    <h2>五、软件/SaaS</h2>
+    <ul class="bullets">
+      <li><b>Palantir (NASDAQ:PLTR)</b>：二季度营收19.4亿美元，同比增长93%；美国商业业务收入7.64亿美元，同比增长149%；公司将2026年营收指引上调至81.5亿-81.6亿美元，此前指引上限约76.6亿美元 → 验证点是美国商业收入增速能否维持在三位数、"Rule of 40"评分（此前达155%）是否可持续。</li>
+      <li><b>Salesforce (NYSE:CRM)</b>：Agentforce年化经常性收入（ARR）达12亿美元，同比增长205%，客户处理的Agentic Work Units累计38亿次；股价上涨3.2%至192.74美元 → 验证点是Agentforce ARR环比增速及付费客户数扩张节奏。</li>
+      <li><b>ServiceNow (NYSE:NOW) / Workday (NASDAQ:WDAY)</b>：本周同步跟涨，为软件板块年内最强单周反弹之一，市场叙事集中在"存量客户基础上叠加AI变现"（ServiceNow的AI Control Tower、Workday的Agentic功能） → 验证点是下一季度AI相关产品对整体订阅收入的实际贡献比例。</li>
+      <li><b>Oracle (NYSE:ORCL)</b>：股价上涨2.5%，GPU云与AI数据库定位持续获企业客户认可；下一次财报预计在9月中旬 → 验证点是9月财报中云基础设施收入增速及积压订单变化。</li>
+    </ul>
+  </section>
+
+  <!-- 6. 消费电子/智能车 -->
+  <section class="block" id="consumer">
+    <h2>六、消费电子/智能车</h2>
+    <ul class="bullets">
+      <li><b>Apple (NASDAQ:AAPL)</b>：据报道公司计划2026年推出具备AI能力的家庭中枢产品，桌面机器人形态或于2027年跟进（据报道，未经公司证实）；iPhone 18 Pro/Pro Max预计9月发布，供应链传闻涉及卫星5G、更小灵动岛等改动（据报道） → 验证点是9月发布会实际产品阵容及供应链备货数据。</li>
+      <li><b>Tesla (NASDAQ:TSLA)</b>：公司正进入以AI、机器人及自研芯片为重心的"高投入周期"；据路透报道，Optimus人形机器人量产节奏"起步会非常缓慢"，量产爬坡或推迟至2026年底至2027年（据报道）。股价8/14上涨0.68%，成交量4,480万股，暂无明确单一催化 → 验证点是Optimus实际量产节点是否兑现、Robotaxi商业化进度。</li>
+    </ul>
+  </section>
+
+  <!-- 7. 投行目标价变动 -->
+  <section class="block" id="ratings">
+    <h2>七、过去24小时投行目标价变动</h2>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>标的</th><th>投行</th><th>目标价变化（前值→新值）</th><th>评级动作</th></tr></thead>
+        <tbody>
+          <tr><td>AMD</td><td>Baird（Tristan Gerra）</td><td>$625 → $1,250</td><td>维持Outperform（8/12，街头最高目标价）</td></tr>
+          <tr><td>SanDisk (SNDK)</td><td>Jefferies（Blayne Curtis）</td><td>$3,000 → $1,750</td><td>维持Buy（8/13投资者日后）</td></tr>
+          <tr><td>SanDisk (SNDK)</td><td>Evercore ISI（Amit Daryanani）</td><td>重申$2,800</td><td>维持Outperform</td></tr>
+          <tr><td>SanDisk (SNDK)</td><td>Argus Research（Jim Kelleher）</td><td>上调至$1,600</td><td>上调至Buy</td></tr>
+          <tr><td>Micron (MU)</td><td>Mizuho（Vijay Rakesh）</td><td>重申$1,375</td><td>维持Outperform</td></tr>
+          <tr><td>ON Semiconductor (ON)</td><td>Wells Fargo（Joe Quatrochi）</td><td>$140 → $130</td><td>维持Overweight</td></tr>
+          <tr><td>ON Semiconductor (ON)</td><td>Bank of America</td><td>$138 → $120</td><td>评级未变（同时上调26/27财年EPS预测3%/7%）</td></tr>
+          <tr><td>ON Semiconductor (ON)</td><td>Baird（Tristan Gerra）</td><td>$100 → $108</td><td>维持Neutral</td></tr>
+          <tr><td>Dell Technologies (DELL)</td><td>未具名分析师（来源：Yahoo Finance汇总）</td><td>上调至$510</td><td>维持Buy</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 8. 卖方研报速览 -->
+  <section class="block" id="research-notes">
+    <h2>八、卖方研报速览</h2>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>机构</th><th>报告标题</th><th>分析师</th><th>发布日期</th><th>核心观点/目标价</th></tr></thead>
+        <tbody>
+          <tr><td>Bank of America Securities</td><td>博通AI芯片融资载体债务规模测算简报（标题未公开）</td><td>Tom Curcuruto</td><td>2026-08-14</td><td>测算博通与Apollo/Blackstone设立的XPV融资平台到2029年中债务或达3,700亿美元，警示杠杆与担保风险</td></tr>
+          <tr><td>Baird</td><td>AMD数据中心/AI GPU平台更新（标题未公开）</td><td>Tristan Gerra</td><td>2026-08-12</td><td>目标价上调至街头最高$1,250，模型测算2030年AI GPU收入达1,470亿美元</td></tr>
+          <tr><td>Mizuho</td><td>美光管理层交流纪要（标题未公开）</td><td>Vijay Rakesh</td><td>2026-08-11前后</td><td>维持Outperform、目标价$1,375，预计DRAM/NAND供给紧张持续至2027年</td></tr>
+          <tr><td>Jefferies</td><td>SanDisk投资者日点评（标题未公开）</td><td>Blayne Curtis</td><td>2026-08-13</td><td>目标价下调至$1,750（仍为Buy），因NAND价格边际转弱、毛利率指引下修</td></tr>
+          <tr><td>Evercore ISI</td><td>SanDisk投资者日点评（标题未公开）</td><td>Amit Daryanani</td><td>2026-08-13</td><td>重申Outperform、目标价$2,800，看好"底价长约"带来的盈利韧性</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 9. 跨市场提示 -->
+  <section class="block" id="cross-market">
+    <h2>九、跨市场提示</h2>
+    <p>日经225指数8月14日收涨0.59%至68,713.80点；韩国KOSPI指数当日大涨2.41%至6,977.34点，当周累计涨幅约11.5%，结束此前连续下跌走势，SK海力士、三星电子、Kioxia等存储/半导体权重股领涨，主因SanDisk投资者日释放的存储涨价与"底价长约"信号外溢至整个亚洲存储链。台股方面，台积电当日尾盘回吐涨幅收跌，ADR报426.35美元（-0.96%）。整体看，亚洲存储/半导体股表现与美股周五的存储链结构性反弹形成同向印证，A股相关联动本期未检索到具体增量信息。</p>
+  </section>
+
+  <!-- 10. 异动/新兴关注 -->
+  <section class="block" id="emerging">
+    <h2>十、异动/新兴关注</h2>
+    <ul class="bullets">
+      <li><b>Michael Burry（"大空头"，独立投资者）</b>：据Invezz于8月14日报道，Burry近期将其做空组合调整为更偏向"风险规避"结构——已退出对SOXX（iShares半导体ETF）的看跌期权，转而将约6%仓位配置为纳斯达克100（QQQ）看跌期权；同时保留Nvidia、Palantir看跌期权，并在美光股价逼近1,000美元之际加大做空力度；现金仓位提升至约12%。他此前于6月30日在643美元附近做空SOXX，该ETF随后一个月内暴跌21%至505美元收盘（7月31日），被业内视为"精准兑现"的一次押注。Burry将SOXX称为"a pure form of overvaluation in an index"（指数中一种纯粹的高估形态）。值得注意的是，尽管此前公开批评CoreWeave的债务驱动式GPU扩张模式，Burry明确表示不会做空该股，理由是其"更像一只meme股"，流通盘小、散户跟风强，基本面因素可能被交易层面因素压制——CoreWeave财报后单日大涨19%即是例证 → 验证点是Burry后续持仓披露（13F/Substack更新）中QQQ看跌仓位的规模变化、美光股价能否兑现其做空逻辑中的"2028年产能过剩"假设，风险是单日情绪与基本面证据不能等同，需持续跟踪而非线性外推。</li>
+      <li><b>FCC无人机监管动向（据报道，尚未最终生效）</b>：美国联邦通信委员会（FCC）已于8月3日在联邦公报刊登公告（Public Notice DA 26-758），拟将大疆（DJI）Air 3S、Mini 5 Pro、Avata 360等此前已获批销售的无人机产品所搭载的避障LiDAR传感器重新归类为"军规级"技术，据此追溯撤销其此前已获得的销售许可；若最终生效，相关产品的进口、营销、分销须在联邦公报公布180天后（约2027年1月30日前后）停止，意见征询期开放至9月2日。此举延续自2025年12月大疆被列入FCC"受限清单"后的一系列限制升级，属于消费电子供应链层面的监管动向，尚未落地为最终规则 → 验证点是9月2日意见征询期结束后FCC是否发布最终裁定、是否将限制范围扩大至其他无人机品牌及零部件供应商。</li>
+    </ul>
+  </section>
+
+  <p class="disclaimer">本内容基于公开资料整理，不构成任何投资建议，仅供学习参考。</p>
+
+  <nav class="backlink"><a href="../../index.html">← 返回首页</a></nav>
+
+</div>
+</body>
+</html>
